@@ -1,18 +1,40 @@
-# Render Blueprint for the API (verify field names against Render's current docs before first use).
-# The database is external (e.g. Neon): set DATABASE_URL in the Render dashboard.
 services:
   - type: web
     name: global-health-api
     runtime: docker
     dockerContext: ./backend
     dockerfilePath: ./backend/Dockerfile
+    plan: free
+    region: frankfurt
     healthCheckPath: /api/health
     envVars:
       - key: DATABASE_URL
-        sync: false
+        fromDatabase:
+          name: global-health-db
+          property: connectionString
       - key: CORS_ORIGINS
-        value: https://YOUR-SITE.vercel.app
+        sync: false
       - key: PUBLIC_URL
-        value: https://YOUR-SITE.vercel.app
+        sync: false
       - key: TRUST_PROXY
         value: "true"
+
+  - type: web
+    name: global-health-web
+    runtime: node
+    plan: free
+    region: frankfurt
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: API_URL
+        fromService:
+          name: global-health-api
+          type: web
+          property: hostport
+
+databases:
+  - name: global-health-db
+    plan: free
+    region: frankfurt
