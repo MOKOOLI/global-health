@@ -1,0 +1,70 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: gh
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-gh}
+      POSTGRES_DB: gh
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gh -d gh"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+
+  backend:
+    build: ./backend
+    environment:
+      REDIS_URL: redis://redis:6379/0   # shared rate limits across workers
+      DATABASE_URL: postgresql+psycopg://gh:${POSTGRES_PASSWORD:-gh}@db:5432/gh
+      OLLAMA_URL: ${OLLAMA_URL:-http://ollama:11434}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:7b}
+      CORS_ORIGINS: http://localhost:3000
+      TRUST_PROXY: "true"   # client IP comes from the web container; keep port 8000 off the public internet
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_started }
+    ports: ["127.0.0.1:8000:8000"]
+
+  web:
+    build:
+      context: ./frontend
+      args:
+        API_URL: http://backend:8000
+    depends_on: [backend]
+    ports: ["3000:3000"]
+
+  # One-off data jobs:  docker compose run --rm etl python -m etl.run reference
+  etl:
+    build: ./backend
+    profiles: ["etl"]
+    environment:
+      DATABASE_URL: postgresql+psycopg://gh:${POSTGRES_PASSWORD:-gh}@db:5432/gh
+    depends_on:
+      db: { condition: service_healthy }
+    volumes:
+      - ./data:/data   # put GBD CSV exports in ./data and import with: etl.run gbd /data/file.csv
+
+  # Optional local LLM for the "AI summary" button:  docker compose --profile ai up -d
+  ollama:
+    image: ollama/ollama:latest
+    profiles: ["ai"]
+    volumes: [ollama:/root/.ollama]
+    ports: ["11434:11434"]
+
+  # Optional scheduler for refreshing data:  docker compose --profile automation up -d
+  n8n:
+    image: n8nio/n8n:latest
+    profiles: ["automation"]
+    ports: ["5678:5678"]
+    volumes: [n8n:/home/node/.n8n]
+
+volumes:
+  pgdata:
+  ollama:
+  n8n:

@@ -1,0 +1,10 @@
+[
+  {"name": "who-gho", "kind": "who-gho", "enabled": true},
+  {"name": "who-don", "kind": "who-don", "enabled": true},
+  {"name": "owid-mpox", "kind": "owid-mpox", "enabled": true},
+  {"name": "who-covid", "kind": "who-covid", "enabled": true},
+  {"name": "cdc-fluview", "kind": "delphi-fluview", "enabled": true},
+  {"name": "cdc-nndss-measles", "kind": "cdc-nndss", "enabled": false, "disease": "measles",
+   "label": "FILL_ME", "geo": ["FILL_ME"],
+   "hint": "Run `python -m etl.run surv cdc-inspect`, copy the exact disease label and the 'states' value(s), then set enabled=true."}
+]

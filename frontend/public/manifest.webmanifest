@@ -1,0 +1,10 @@
+{
+  "name": "Global Health Atlas · اطلس سلامت جهانی",
+  "short_name": "Health Atlas",
+  "description": "Open disease statistics and early-warning signals for every country.",
+  "start_url": "/en",
+  "display": "standalone",
+  "background_color": "#0B1A26",
+  "theme_color": "#0B1A26",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
