@@ -27,7 +27,4 @@ services:
     startCommand: npm start
     envVars:
       - key: API_URL
-        fromService:
-          name: global-health-api
-          type: web
-          property: hostport
+        sync: false
