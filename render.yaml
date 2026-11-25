@@ -9,9 +9,7 @@ services:
     healthCheckPath: /api/health
     envVars:
       - key: DATABASE_URL
-        fromDatabase:
-          name: global-health-db
-          property: connectionString
+        sync: false
       - key: CORS_ORIGINS
         sync: false
       - key: PUBLIC_URL
@@ -33,8 +31,3 @@ services:
           name: global-health-api
           type: web
           property: hostport
-
-databases:
-  - name: global-health-db
-    plan: free
-    region: frankfurt
