@@ -1,35 +1,18 @@
-(
-echo services:
-echo   - type: web
-echo     name: global-health-api
-echo     runtime: docker
-echo     dockerContext: ./backend
-echo     dockerfilePath: ./backend/Dockerfile
-echo     plan: free
-echo     region: frankfurt
-echo     healthCheckPath: /api/health
-echo     envVars:
-echo       - key: DATABASE_URL
-echo         sync: false
-echo       - key: CORS_ORIGINS
-echo         sync: false
-echo       - key: PUBLIC_URL
-echo         sync: false
-echo       - key: TRUST_PROXY
-echo         value: "true"
-echo.
-echo   - type: web
-echo     name: global-health-web
-echo     runtime: node
-echo     plan: free
-echo     region: frankfurt
-echo     rootDir: frontend
-echo     buildCommand: npm install ^&^& npm run build
-echo     startCommand: npm start
-echo     envVars:
-echo       - key: API_URL
-echo         fromService:
-echo           name: global-health-api
-echo           type: web
-echo           envVarKey: RENDER_EXTERNAL_URL
-) > render.yaml
+# Render Blueprint for the API (verify field names against Render's current docs before first use).
+# The database is external (e.g. Neon): set DATABASE_URL in the Render dashboard.
+services:
+  - type: web
+    name: global-health-api
+    runtime: docker
+    dockerContext: ./backend
+    dockerfilePath: ./backend/Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: CORS_ORIGINS
+        value: https://YOUR-SITE.vercel.app
+      - key: PUBLIC_URL
+        value: https://YOUR-SITE.vercel.app
+      - key: TRUST_PROXY
+        value: "true"

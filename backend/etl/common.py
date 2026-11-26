@@ -5,7 +5,7 @@ from datetime import datetime
 from typing import Iterable
 
 import httpx
-from sqlalchemy import select
+from sqlalchemy import insert, select
 from sqlalchemy.orm import Session
 
 from app.models import EtlRun, Indicator, Observation, Source
@@ -90,10 +90,34 @@ def upsert_observations(db: Session, indicator_id: int, rows: Iterable[dict]) ->
             )
             existing[key] = True  # type: ignore[assignment]  # guard against dup keys in input
         n += 1
-    if new_rows:
-        db.bulk_insert_mappings(Observation, new_rows)
+    # Insert in modest multi-row statements and commit each chunk: one 5,000-row executemany held open over a slow or
+    # flaky link (e.g. a remote Neon database) gets the connection dropped. The load is idempotent, so a re-run resumes.
+    table = Observation.__table__
+    for i in range(0, len(new_rows), 500):
+        db.execute(insert(table).values(new_rows[i:i + 500]))
+        db.commit()
     db.flush()
     return n
+
+
+def with_retry(db: Session, fn, tries: int = 4):
+    """Run fn(); if the database connection was dropped (e.g. a serverless Postgres that scaled to zero while we were
+    downloading), roll back, throw away the pooled connections and try again. fn must be safe to repeat (our loaders are idempotent)."""
+    import time
+
+    from sqlalchemy.exc import DBAPIError, OperationalError
+
+    from app.db import engine
+
+    for attempt in range(1, tries + 1):
+        try:
+            return fn()
+        except (OperationalError, DBAPIError) as e:
+            if attempt == tries or not (isinstance(e, OperationalError) or getattr(e, "connection_invalidated", False)):
+                raise
+            db.rollback()
+            engine.dispose()
+            time.sleep(2 * attempt)
 
 
 class Run:
@@ -106,16 +130,17 @@ class Run:
 
     def __enter__(self):
         self.db.add(self.rec)
-        self.db.flush()
+        self.db.commit()      # persist the run record so a rollback during a retry cannot lose it
         return self
 
     def __exit__(self, exc_type, exc, tb):
+        if exc:
+            self.db.rollback()          # discard the failed work first; the run record itself was committed at start
         self.rec.finished_at = datetime.utcnow()
         self.rec.rows_written = self.rows
         self.rec.status = "failed" if exc_type else "ok"
         if exc:
             self.rec.message = str(exc)[:2000]
-            self.db.rollback()
-            self.db.add(self.rec)
+        self.db.add(self.rec)
         self.db.commit()
         return False

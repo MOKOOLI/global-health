@@ -205,3 +205,23 @@ def test_map_reports_coverage(env):
     r = c.get("/api/indicators/t_diab/map").json()
     assert r["n"] == 2 and r["n_total"] >= 200
     assert r["population_share"] is None or 0 < r["population_share"] <= 1
+
+
+def test_with_retry_recovers_from_dropped_connection(env, monkeypatch):
+    from sqlalchemy.exc import OperationalError
+
+    from etl.common import with_retry
+    monkeypatch.setattr("time.sleep", lambda s: None)
+    calls = {"n": 0}
+
+    def flaky():
+        calls["n"] += 1
+        if calls["n"] < 3:
+            raise OperationalError("INSERT", {}, Exception("server closed the connection unexpectedly"))
+        return "ok"
+
+    with SessionLocal() as db:
+        assert with_retry(db, flaky) == "ok" and calls["n"] == 3
+        calls["n"] = -10
+        with pytest.raises(OperationalError):
+            with_retry(db, flaky, tries=2)

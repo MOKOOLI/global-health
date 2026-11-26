@@ -7,7 +7,10 @@ _is_sqlite = settings.database_url.startswith("sqlite")
 engine = create_engine(
     settings.database_url,
     pool_pre_ping=not _is_sqlite,
-    connect_args={"check_same_thread": False} if _is_sqlite else {},
+    connect_args=(
+        {"check_same_thread": False} if _is_sqlite
+        else {"keepalives": 1, "keepalives_idle": 30, "keepalives_interval": 10, "keepalives_count": 5}   # survive idle NAT/proxy drops
+    ),
 )
 SessionLocal = sessionmaker(bind=engine, autoflush=False, expire_on_commit=False)
 

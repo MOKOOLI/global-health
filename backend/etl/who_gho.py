@@ -14,6 +14,7 @@ from etl.common import (
     http_get_json,
     upsert_indicator,
     upsert_observations,
+    with_retry,
 )
 from etl.indicators_config import WHO_INDICATORS
 
@@ -89,21 +90,26 @@ def load_who(db: Session, only: str | None = None) -> dict:
                 )
                 continue
             disease = diseases.get(cfg["disease"]) if cfg["disease"] else None
-            ind = upsert_indicator(
-                db,
-                cfg["slug"],
-                disease_id=disease.id if disease else None,
-                source_id=src.id,
-                measure=cfg["measure"],
-                unit=cfg["unit"],
-                name_en=cfg["name_en"],
-                name_fa=cfg.get("name_fa"),
-                external_code=code,
-                external_name=name,
-                higher_is_worse=cfg.get("higher_is_worse", True),
-            )
-            rows = [r for r in parse_rows(fetch_rows(code), cfg["quality"]) if r["country_iso3"] in countries]
-            n = upsert_observations(db, ind.id, rows)
+            rows = [r for r in parse_rows(fetch_rows(code), cfg["quality"]) if r["country_iso3"] in countries]  # download first
+
+            def write(cfg=cfg, code=code, name=name, disease=disease, rows=rows):
+                ind = upsert_indicator(
+                    db,
+                    cfg["slug"],
+                    disease_id=disease.id if disease else None,
+                    source_id=src.id,
+                    measure=cfg["measure"],
+                    unit=cfg["unit"],
+                    name_en=cfg["name_en"],
+                    name_fa=cfg.get("name_fa"),
+                    external_code=code,
+                    external_name=name,
+                    higher_is_worse=cfg.get("higher_is_worse", True),
+                )
+                db.commit()
+                return upsert_observations(db, ind.id, rows)
+
+            n = with_retry(db, write)
             run.rows += n
             report["loaded"].append(dict(slug=cfg["slug"], code=code, rows=n))
             db.commit()
