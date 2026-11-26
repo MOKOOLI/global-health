@@ -36,7 +36,7 @@ router = APIRouter(prefix="/api")
 
 MEASURE_PREF = {"incidence": 0, "prevalence": 1, "mortality": 2, "deaths": 3, "cases": 4,
                 "daly": 5, "coverage": 6}
-UNIT_PREF = {"per_100k": 0, "per_1000": 1, "percent": 2, "count": 3}
+UNIT_PREF = {"per_100k": 0, "per_1000": 1, "per_100k_births": 1, "per_1000_births": 1, "percent": 2, "count": 3}
 
 
 def _pref(ind: Indicator):

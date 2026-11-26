@@ -62,6 +62,8 @@ MEASURES: dict[str, dict] = {
 UNITS: dict[str, dict] = {
     "per_100k": {"en": "per 100,000", "fa": "به‌ازای ۱۰۰٬۰۰۰ نفر"},
     "per_1000": {"en": "per 1,000", "fa": "به‌ازای ۱۰۰۰ نفر"},
+    "per_100k_births": {"en": "per 100,000 live births", "fa": "به‌ازای ۱۰۰٬۰۰۰ تولد زنده"},
+    "per_1000_births": {"en": "per 1,000 live births", "fa": "به‌ازای ۱۰۰۰ تولد زنده"},
     "count": {"en": "count", "fa": "تعداد"},
     "percent": {"en": "%", "fa": "درصد"},
     "years": {"en": "years", "fa": "سال"},

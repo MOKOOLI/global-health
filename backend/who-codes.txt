@@ -1,0 +1,671 @@
+==== diabetes  
+SA_0000001421                Age-standardized DALYs, diabetes mellitus, per 100,000
+SA_0000001440                Age-standardized death rates, diabetes mellitus, per 100,000
+NCD_CCS_DiabetesReg          Existence of a diabetes registry
+NCD_CCS_HbA1c                General availability of diabetes testing (by HbA1c) at the primary health care level
+NCD_CCS_DiabetesTest         General availability of diabetes testing (by blood glucose measurement, OGTT, or HbA1c) at the primary health care level
+NCD_CCS_DiabPlan             Existence of operational policy/strategy/action plan for diabetes
+NCDMORT3070                  Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease
+NCD_DIABETES_TREATMENT_AGESTD Diabetes treatment coverage, age-standardized
+NCD_CCS_DIAB_TARGET          Existence of a national target on diabetes
+NCD_CCS_DIAB_SVY             Has conducted a recent, national adult risk factor survey covering raised blood glucose/diabetes
+NCD_DIABETES_PREVALENCE_CRUDE Prevalence of diabetes, crude
+NCD_CCS_diabtest             General availability of diabetes testing (by blood glucose measurement, OGTT) at the primary health care level
+NCD_DIABETES_TREATMENT_CRUDE Diabetes treatment coverage, crude
+NCD_DIABETES_PREVALENCE_AGESTD Prevalence of diabetes, age-standardized
+NCD_CCS_DIAB_GUIDE           Existence of evidence-based national guidelines/protocols/standards for the management of diabetes
+PRISON_D4_DIABETES_DIAG_TOT  In-prison diabetes mellitus diagnosis (number of diagnoses)
+==== hypertension  
+NCD_HYP_PREVALENCE_A         Hypertension among adults aged 30-79 years, prevalence, age-standardized
+NCD_HYP_CONTROL_C            Hypertension: effective treatment coverage (controlled hypertension) among adults aged 30-79 with hypertension, crude (%)
+NCD_HYP_PREVALENCE_C         Hypertension among adults aged 30-79 years, prevalence, crude
+NCD_CCS_BP_SVY               Has conducted a recent, national adult risk factor survey covering raised blood pressure/hypertension
+NCD_HYP_TREATMENT_A          Hypertension treatment coverage among adults aged 30-79 with hypertension, age-standardized (%)
+NCD_HYP_DIAGNOSIS_C          Hypertension: diagnosis coverage among adults aged 30-79 with hypertension, crude (%)
+NCD_HYP_DIAGNOSIS_A          Hypertension: diagnosis coverage among adults aged 30-79 with hypertension, age-standardized (%)
+NCD_HYP_CONTROL_A            Hypertension effective treatment coverage (controlled hypertension )among adults aged 30-79, age-standardized (%)
+NCD_HYP_TREATMENT_C          Hypertension treatment coverage among adults aged 30-79 with hypertension, crude (%)
+NCD_CCS_BP_TARGET            Existence of a national target on blood pressure / hypertension
+==== DTP3  
+dptv                         DTP3 immunization coverage among one-year-olds (%)
+WHS4_100                     Diphtheria tetanus toxoid and pertussis third-dose  (DTP3) immunization coverage among 1-year-olds (%) (WUENIC)
+==== hepatitis  
+RSUD_620                     HIV, Hepatitis counselling and treatment availability in specialized facilities and services
+WHS4_117                     Hepatitis B (HepB3) immunization coverage among 1-year-olds (%) (WUENIC)
+SDGHEPHBSAGPRV               Hepatitis B surface antigen (HBsAg) prevalence (%)
+HEPATITIS_HCV_TREATMENT_PERDIAGNOSED_PER100 Chronic hepatitis C (HCV) treatment rate as percentage of diagnosed (%)
+HEPATITIS_HCV_INFECTIONS_NEW_NUM New chronic hepatitis C (HCV) infections (number)
+HEPB_HBSAG_CARRIER           Hepatitis B surface antigen (HBsAG) carriers (per 100 000 population)
+HEPATITIS_HCV_DIAGNOSIS_PERINFECTED_CRD_PER100 Chronic hepatitis C (HCV) diagnosis coverage as percentage of total HCV infected, including cured (%)
+PRISON_D4_HEPB_DIAG_TOT      In-prison Hepatitis B diagnosis (number of diagnoses)
+HEPATITIS_HCV_LIVINGWITH_CRD_NUM People living with chronic hepatitis C (HCV) including cured (all ages) (adjusted number)
+HEPATITIS_HCV_LIVINGWITH_NUM People living with chronic hepatitis C (HCV) (number)
+HEPATITIS_HBV_LIVINGWITH_NUM People living with chronic hepatitis B (HBV) (number)
+HEPATITIS_HBV_PREVALENCE_PER100 Prevalence of chronic hepatitis B (HBV) in the general population (%)
+HHS_LAWPOLICY                HIV, Hepatitis, and STI-related laws and policies
+HEPATITIS_HCV_TREATMENT_HIV_PERCENT People living with HIV treated for chronic hepatitis C infection (percent)
+HEPATITIS_HCV_TREATMENT_INITIATED_NUM Persons initiated chronic hepatitis C(HCV) treatment (number)
+HEPATITIS_HCV_PREVALENCE_PER100 Prevalence of chronic hepatitis C (HCV) ) in the general population (%)
+HEPATITIS_DEATHS_RATE        Hepatitis - Deaths caused by chronic hepatitis B and C (per 100 000 population)
+HEPATITIS_HBV_DIAGNOSED_NUM  Chronic hepatitis B (HBV) infected persons diagnosed (number)
+HEP_TEST_TREAT_NUM_VOLTRON   Hepatitis testing and treatment indicator (number)
+PRISON_D4_HEPC_DIAG_TOT      In-prison Hepatitis C diagnosis (number of diagnoses)
+HEPATITIS_HBV_DEATHS_NUM     Deaths caused by chronic hepatitis B (HBV) infection (number)
+HEP_OVERVIEW_VOLTRON         Hepatitis overview voltron indicator
+HEPATITIS_HCV_TESTING_HIV_PERCENT People living with HIV diagnosed with chronic hepatitis C infection (percent)
+HEPATITIS_HBV_TREATMENT_PERINFECTED_PER100 Chronic hepatitis B (HBV) treatment rate as percentage of total infected (%)
+HEPATITIS_HCV_TREATMENT_PWID_PERCENT People living with HIV who inject drugs, treated for chronic hepatitis C infection (percent)
+HEPATITIS_HBV_TREATMENT_PERDIAGNOSED_PER100 Chronic hepatitis B (HBV) treatment rate as percentage of diagnosed (%)
+HEP_EMTCT_VOLTRON            Hepatitis EMTCT voltron indicator
+HEPATITIS_HCV_DEATHS_NUM     Deaths caused by chronic hepatitis C (HCV) infection (number)
+HEPATITIS_HCV_DIAGNOSED_NUM  Chronic hepatitis C (HCV) infected persons diagnosed (number)
+HEPATITIS_HCV_TREATMENT_CUM_PERINFECTED_CRD_PER100 Chronic hepatitis C (HCV) cumulative treatment rate as percentage of total infected, including cured  (%)
+HEPATITIS_HCV_TESTING_PWID_PERCENT People living with HIV who inject drugs, diagnosed with chronic hepatitis C infection (percent)
+HEPATITIS_HBV_TREATMENT_NUM  Persons on chronic hepatitis B (HBV) treatment (number)
+HEPATITIS_DEATHS_NUM         Hepatitis - Deaths caused by chronic hepatitis B and C
+HEPATITIS_HCV_DIAGNOSED_CRD_NUM Chronic hepatitis C (HCV) infected persons diagnosed, including cured (number)
+HEP_TEST_TREAT_PCT_VOLTRON   Hepatitis testing and treatment indicator (percent)
+HEPATITIS_HBV_DIAGNOSIS_PERINFECTED_PER100 Chronic hepatitis B (HBV) diagnosis coverage as a percentage of infected (%)
+PRISON_B11_VACPREV_HEPA      In-prison vaccination for Hepatitis A
+PRISON_B11_VACPREV_HEPB      In-prison vaccination for Hepatitis B
+HEPATITIS_HCV_TREATMENT_CUM_NUM Persons on chronic hepatitis C (HCV) treatment, cumulative (number)
+HEP_GAM_VOLTRON              Hepatitis GAM-sourced indicator
+HEPATITIS_HBV_INFECTIONS_NEW_NUM New chronic hepatitis B (HBV) infections (number)
+==== suicide  
+SDG_SH_STA_SCIDEN            Number of suicide deaths
+SDGSUICIDE                   Crude suicide rates (per 100 000 population)
+MH_12                        Age-standardized suicide rates (per 100 000 population)
+PRISON_D3_DEATHS_SUICIDE_MRATE In-prison suicide mortality rate (per 100 000 incarcerated persons per year)
+PRISON_B16_SUICIDERISK       In-prison standardized protocol for suicide
+==== tobacco  
+Camp_gov_prog                Campaign was part of a comprehensive tobacco control programme
+E11_brand_stretching         Ban on non-tobacco goods AND services identified with tobacco brand names
+E11_compliance               Compliance of ban on non-tobacco goods AND services identified with tobacco brand names
+E12_brand_sharing            Ban on brand name of non-tobacco products used for tobacco product
+E12_compliance               Compliance of ban on brand name of non-tobacco products used for tobacco product
+E13_compliance               Compliance of ban on appearance of tobacco brands in TV and/or films (product placement)
+E14_compliance               Compliance of ban on appearance of tobacco products in TV and/or films
+E14b_movies_anti_tob_ads     Requirement to present prescribed anti-tobacco ads before, during or after the broadcasting or showing of any visual entertainment media product that depicts tobacco products, use or images
+E21_vending_machines         Complete ban on tobacco vending machines
+E24_internet_sales_ban       Ban on internet sales of tobacco products
+E18_csr_anti_tobacco_media   Ban on tobacco companies funding or making contributions (including in-kind contributions) to smoking prevention media campaigns, including those directed at youth
+E20_subnational_exists       Subnational laws or regulations exist banning some or all types of tobacco advertising, promotion and sponsorship
+E14a_prod_tv_films           Ban on appearance of tobacco products in TV and/or films
+E15c_sponsor_publicity       Banning the publicity of financial or other sponsorship or support by the tobacco industry of events, activities, individuals
+E17_csr_promo_others         Ban on entities other than tobacco companies/tobacco industry publicizing the Corporate Social Responsibility activities of the tobacco companies
+E22_subnational_exists       Subnational bans on tobacco advertising, promotion and sponsorship
+E25_ban_display_pt_of_sale   Ban on display of tobacco products at points of sale
+E_Group                      Enforcing bans on tobacco advertising, promotion and sponsorship
+E13_brand_placement          Ban on appearance of tobacco brands in TV and/or films (product placement)
+E14_prod_tv_films            Appearance of tobacco products in TV and/or films
+E16_csr_promo_self           Ban on tobacco companies/tobacco industry publicizing their “Corporate Social Responsibility” activities
+E19_movies_anti_tob_ads      Required anti-tobacco ads for any visual entertainment media product that depicts tobacco products, use or images
+M_Est_tob_daily              Estimate of daily tobacco use prevalence (%)
+M_Est_tob_daily_crude        Daily tobacco smoking, crude adjusted
+M_Group                      Monitoring tobacco use and prevention policies
+M_smkless_def_text_adult     Adult smokeless tobacco use indicator definition
+M_smkless_def_text_youth     Youth smokeless tobacco use indicator definition
+M_Est_tob_curr               Estimate of current tobacco use prevalence (%)
+M_smkless_prev_adult         Adult smokeless tobacco use indicator rate
+M_smkless_prev_youth         Youth smokeless tobacco use indicator rate
+E6b_ban_display_pt_of_sale   Ban on display of tobacco products at points of sale
+E9_compliance                Compliance of ban on free distribution of tobacco products in the mail or through other means
+E9_free_distrib              Ban on free distribution of tobacco products in the mail or through other means
+O_Avail_hlth_clin            Treatment for tobacco dependence available in health clinics or other primary care facilities
+O_Avail_other                Treatment for tobacco dependence available in other settings
+O_Ins_community              Treatment for tobacco dependence in the community cost covered
+O_Ins_hlth_clin              Treatment for tobacco dependence in health clinics or other primary care facilities cost covered
+O_Ins_off_hlth_prof          Treatment for tobacco dependence in offices of health professionals cost covered
+O_Avail_community            Treatment for tobacco dependence available in the community
+O_Avail_hosp                 Treatment for tobacco dependence available in hospitals
+O_Avail_off_hlth_prof        Treatment for tobacco dependence available in offices of health professionals
+O_Ins_hosp                   Treatment for tobacco dependence in hospitals cost covered
+O_Ins_other                  Treatment for tobacco dependence in other settings cost covered
+O_Avail_hlthSPACEclin        Treatment for tobacco dependence available in health clinics or other primary care facilities
+P_Group                      Protecting people from tobacco smoke
+O_Group                      Offering help to quit tobacco use
+R_afford_price_dispersion    Tobacco tax structure: Price dispersion: Share of cheapest brand price in premium brand price (%) (the higher the % the smaller the gap)
+R_afford_tax_auto_adjust     Tobacco tax structure: Specific tax component automatically adjusted for inflation (or other)
+R_admin_tax_stamps           Tax administration: Tax stamps applied on tobacco products
+R_excise_incr                Tobacco excises increased over the survey period
+R_Group                      Raising taxes on tobacco
+Rev_imp_other                Annual tax revenues - import duties and all other taxes (excluding corporate taxes on tobacco companies)
+Rev_type                     Annual tax revenues - tobacco products included
+TOBACCO_0000000392           Health warnings appear on each other smoked tobacco package and any outside packaging and labelling used in the retail sale
+TOBACCO_0000000395           Health warnings on other smoked tobacco packaging must be written in the principal language(s) of the country
+TOBACCO_0000000192           Prevalence of smoking any tobacco product among persons aged >= 15 years
+TOBACCO_0000000344           Prevalence of current tobacco use among adolescents aged 13-15 years
+TOBACCO_0000000389           Number of health warnings approved by the law for other smoked tobacco packaging
+TOBACCO_0000000390           Health warnings on other smoked tobacco packaging must be rotated
+TOBACCO_0000000393           Health warnings on other smoked tobacco packaging describe the harmful effects of tobacco use on health
+TOBACCO_0000000386           Percentage of principal display area mandated to be covered by health warnings - front and back of other smoked tobacco packaging
+TOBACCO_0000000387           Percentage of principal display area mandated to be covered by health warnings - front of other smoked tobacco packaging
+TOBACCO_0000000388           Specific health warnings are mandated for other smoked tobacco packaging
+TOBACCO_0000000394           Font style, font size and colour of health warnings are mandated for other smoked tobacco packaging
+UHC_TOBACCONO                Prevalence of non-use of tobacco
+TOBACCO_0000000342           Daily users of any smokeless tobacco product (crude rate)
+TOBACCO_0000000391           Percentage of principal display area mandated to be covered by health warnings - back of other smoked tobacco packaging
+TOBACCO_0000000396           Health warnings on other smoked tobacco packaging must include a photograph or graphic
+W1_HW_law_B                  Law mandates that health warnings appear on other smoked tobacco packages
+W1_HW_law_C                  Law mandates that health warnings appear on smokeless tobacco packages
+W_Group                      Warning about the dangers of tobacco
+W10_graphic_B                Do the health warnings on other smoked tobacco packaging include a photograph or graphic?
+W10_graphic_C                Do the health warnings on smokeless tobacco packaging include a photograph or graphic?
+W11_outside_pack_C           Do health warnings appear on each smokeless tobacco package and any outside packaging and labelling used in the retail sale?
+W12_imports_dutyfree_B       Health warnings on other smoked tobacco packaging law applys to products whether manufactured domestically imported AND for duty-free sale
+W12_imports_dutyfree_C       Health warnings on smokeless tobacco packaging law applys to products whether manufactured domestically imported AND for duty-free sale
+W13_ind_liability_C          Health warnings on smokeless tobacco packaging do not remove or diminish the liability of the tobacco industry
+W14_harm_effects_B           Do health warnings on other smoked tobacco packaging describe the harmful effects of tobacco use on health?
+W16_number_hw_B              How many health warnings are approved by the law for other smoked tobacco packaging?
+W16_number_hw_C              How many health warnings are approved by the law for smokeless tobacco packaging?
+W18_misleading_terms_C       Ban on deceitful terms on smokeless tobacco packaging
+W19_colours_numbers_B        Other smoked tobacco packaging and labelling must not use figurative or other signs including colors or numbers as substitutes for prohibited misleading terms and descriptors
+W19_colours_numbers_C        Smokeless tobacco packaging and labelling must not use figurative or other signs including colors or numbers as substitutes for prohibited misleading terms and descriptors
+W2_pc_front_back_C           Percentage of principal display area mandated to be covered by health warnings - front and back of smokeless tobacco packaging
+W23_emissions_front_back_B   Other smoked tobacco packaging and labelling must display qualitative information on constituents and emissions on one or more of the principal display areas
+W24_exp_date_B               Other smoked tobacco packaging and labelling must not display expiry dates
+W20_flavours_B               Other smoked tobacco packaging and labelling must not use descriptors depicting flavours
+W21_emissions_quant_C        Smokeless tobacco packaging and labelling must not display quantitative information on emission yields (such as tar nicotine and carbon monoxide) including when used as part of a brand name or trademark
+W1_HW_law_A                  Law mandates that health warnings appear on tobacco packages
+W11_outside_pack_B           Do health warnings appear on each other smoked tobacco package and any outside packaging and labelling used in the retail sale?
+W13_ind_liability_A          Health warnings on cigarette packaging do not remove or diminish the liability of the tobacco industry
+W13_ind_liability_B          Health warnings on other smoked tobacco packaging do not remove or diminish the liability of the tobacco industry
+W14_harm_effects_C           Do health warnings on smokeless tobacco packaging describe the harmful effects of tobacco use on health?
+W23_emissions_front_back_C   Smokeless tobacco packaging and labelling must display qualitative information on constituents and emissions on one or more of the principal display areas
+W15_specific_hw_C            Does the law mandate specific health warnings on smokeless tobacco packaging?
+W17_fines_C                  Health warnings on smokeless tobacco packaging law requires or establishes fines for violations
+W18_misleading_terms_B       Ban on deceitful terms on other smoked tobacco packaging
+W14_harm_effects_A           Do health warnings on cigarette packaging describe the harmful effects of tobacco use on health?
+W15_specific_hw_B            Does the law mandate specific health warnings on other smoked tobacco packaging?
+W26_plain_packaging_C        Plain packaging of smokeless tobacco products is mandatory (ie. the use of logos colours brand images or promotional information on packaging other than brand names and product names displayed in a standard colour and font style is prohibited).
+W17_fines_B                  Health warnings on other smoked tobacco packaging law requires or establishes fines for violations
+W2_pc_front_back_B           Percentage of principal display area mandated to be covered by health warnings - front and back of other smoked tobacco packaging
+W20_flavours_C               Smokeless tobacco packaging and labelling must not use descriptors depicting flavours
+W21_emissions_B              Other smoked tobacco packaging and labelling must not display quantitative information on emission yields (such as tar nicotine and carbon monoxide) including when used as part of a brand name or trademark
+W22_emissions_qual_B         Other smoked tobacco packaging and labelling must display qualitative information on relevant constituents and emissions
+W22_emissions_qual_C         Smokeless tobacco packaging and labelling must display qualitative information on relevant constituents and emissions
+W4_pc_back_C                 Percentage of principal display area mandated to be covered by health warnings - back of smokeless tobacco packaging
+W5_top_side_B                Health warnings on other smoked tobacco packaging must be placed at the top of the principal display areas of the package
+W5_top_side_C                Health warnings on smokeless tobacco packaging must be placed at the top of the principal display areas of the package
+W9_no_obscure_B              Health warnings on other smoked tobacco packaging must not be obscured in any way including by required markings such as tax stamps
+WHOSIS_000012                Prevalence of smoking any tobacco product among adults (&#8805;15 years) (%)
+WHOSIS_000013                Prevalence of current tobacco use among adolescents (13-15 years) (%)
+W27_smokeless_prod_ban       The sale of all smokeless tobacco products is completely banned
+W3_pc_front_B                Percentage of principal display area mandated to be covered by health warnings - front of other smoked tobacco packaging
+W6_font_C                    Does the law mandate font style, font size and colour of health warnings on smokeless tobacco packaging?
+W7_rotation_B                Are the health warnings on other smoked tobacco packaging rotating?
+W7_rotation_C                Are the health warnings on smokeless tobacco packaging rotating?
+W25_quitline_number_C        The quit line number must appear on smokeless tobacco packaging or labelling
+W3_pc_front_C                Percentage of principal display area mandated to be covered by health warnings - front of smokeless tobacco packaging
+W4_pc_back_B                 Percentage of principal display area mandated to be covered by health warnings - back of other smoked tobacco packaging
+W8_princ_langs_B             Are the health warnings on other smoked tobacco packaging written in the principal language(s) of the country?
+W9_no_obscure_C              Health warnings on smokeless tobacco packaging must not be obscured in any way including by required markings such as tax stamps
+W21_emissions_quant_B        Other smoked tobacco packaging and labelling must not display quantitative information on emission yields (such as tar nicotine and carbon monoxide) including when used as part of a brand name or trademark
+W-MM_Group                   Anti-tobacco mass media campaigns
+W24_exp_date_C               Smokeless tobacco packaging and labelling must not display expiry dates
+W25_quitline_number_B        The quit line number must appear on other smoked tobacco packaging or labelling
+W26_plain_packaging_B        Plain packaging of other smoked tobacco products is mandatory (ie. the use of logos colours brand images or promotional information on packaging other than brand names and product names displayed in a standard colour and font style is prohibited).
+SDGTOBACCO                   Age-standardized prevalence of current tobacco smoking among persons aged 15 years and older
+W6_font_B                    Does the law mandate font style, font size and colour of health warnings on other smoked tobacco packaging?
+W8_princ_langs_C             Are the health warnings on smokeless tobacco packaging written in the principal language(s) of the country?
+NTCP_agcy                    National agency for tobacco control exists
+NCD_CCS_TOB_SVY              Has conducted a recent, national adult risk factor survey covering tobacco use
+E_compl_e14                  Compliance with ban on appearance of tobacco products in TV and/or films (score)
+TOBACCO_MPOWER_E3_INDIRECTADBANSPLUS Tobacco Enforce bans: E3 indirect advertising, additional bans
+NCD_CCS_TobPlan              Existence of operational policy/strategy/action plan to decrease tobacco use
+TOBACCO_MPOWER_R_TAXADMINISTRATION Tobacco Raise taxes: Tax administration
+R_admin_unique_identifier    Tobacco tax administration: Unique identifier
+TOBACCO_MPOWER_E2_INDIRECTADBANS Tobacco Enforce bans: E2 indirect advertising
+NTCP_govt_obj                Government objectives on tobacco control exist
+Adult_nonsmoked_national     Archived, see TOBACCO_INDICATOR
+TOBACCO_MPOWER_M4_SMOKELESSECIGARETTESSCHOOL Tobacco Monitor: school-based national surveys, smokeless tobacco or e-cigarettes
+TOBACCO_MPOWER_R_EARMARKED   Tobacco Raise taxes:  Reported use of earmarked tobacco taxes
+R_earmarking                 Reported use of earmarked tobacco taxes
+Rev_import                   Tobacco tax revenues - import duties
+TOBACCO_MPOWER_P2_SMOKEFREEPLACEDETAILS Tobacco MPOWER Protect people: P2 smoke-free places, additional characteristics
+TOBACCO_MPOWER_M2_SMOKELESSECIGARETTES Tobacco Monitor: population-based national surveys, smokeless tobacco or e-cigarettes
+TOBACCO_MPOWER_W1B_TOBACCOSMOKED Tobacco Warning: W1b smoked tobacco packaging health warnings
+E23_vending_machines         Ban on tobacco vending machines
+TOBACCO_MPOWER_R_TAXREVENUELATEST Tobacco Raise taxes: Annual tax revenues from tobacco products, latest reporting period
+Adult_svy_national           Archived, see TOBACCO_INDICATOR
+TOBACCO_MPOWER_W2A_CIGARETTES Tobacco Warning: W2a cigarette packaging health warnings, other characteristics
+TOBACCO_MPOWER_W2B_TOBACCOSMOKED Tobacco Warning: W2b smoked tobacco packaging health warnings, other characteristics
+Adult_curr_e-cig             Archived, see TOBACCO_INDICATOR
+TOB_R_PRICE                  Retail price for tobacco and nicotine products
+Adult_daily_smokeless        Archived, see TOBACCO_INDICATOR
+NCD_CCS_TOB_MGMT_GUIDE       Existence of evidence-based national guidelines/protocols/standards for the management of tobacco dependence
+M_Est_smk_curr               Estimate of current tobacco smoking prevalence (%)
+TOBACCO_MPOWER_R_INFLATIONADJUSTEDPRICES Tobacco Raise taxes: Inflation-adjusted prices for most sold brand of cigarettes
+Adult_curr_tob_smoking       Archived, see TOBACCO_INDICATOR
+NCD_CCS_TOB_TARGET           Existence of a national target on tobacco
+Yth_daily_tob_smoking        Prevalence of daily tobacco smoking among adolescents (%)
+TOBACCO_MPOWER_W1C_TOBACCOSMOKELESS Tobacco Warning: W1c smokeless tobacco packaging health warnings
+TOBACCO_MPOWER_W3_MASSMEDIA  Tobacco Warning: W3 anti-tobacco mass-media campaigns
+E_compl_e13                  Compliance with ban on appearance of tobacco brands in TV and/or films (score)
+TOBACCO_MPOWER_M3_PREVALENCE Tobacco Monitor: school-based national surveys, tobacco use, tobacco smoking, and cigarette smoking, prevalence
+TOBACCO_MPOWER_W1A_CIGARETTES Tobacco Warning: W1a cigarette packaging health warnings
+Yth_curr_smokeless           Prevalence of current smokeless tobacco use among adolescents (%)
+Adult_curr_cig_smoking       Archived, see TOBACCO_INDICATOR
+Rev_other                    Tobacco tax revenues - other
+TOBACCO_MPOWER_M2_PREVALENCE Tobacco Monitor: population-based national surveys, smokeless tobacco or e-cigarettes, prevalence
+TOBACCO_MPOWER_M3_TOBACCOUSESMOKINGSCHOOL Tobacco Monitor: school-based national surveys, tobacco use, tobacco smoking, and cigarette smoking
+Adult_curr_tob_use           Archived, see TOBACCO_INDICATOR
+R_type_variant               Most sold brand of other tobacco type
+TOBACCO_MPOWER_E1_DIRECTADBANS Tobacco Enforce bans: E1 direct advertising
+TOBACCO_MPOWER_W2C_TOBACCOSMOKELESS Tobacco Warning: W2c smokeless tobacco packaging health warnings, other characteristics
+TOBACCO_MPOWER_R_TAXSTRUCTURE Tobacco Raise taxes: Tobacco tax structure
+Adult_svy_age_range          Archived, see TOBACCO_INDICATOR
+M_Est_smk_daily              Estimate of daily tobacco smoking prevalence (%)
+E17b_csr_promo_self          Ban on tobacco companies/the tobacco industry publicizing their CSR activities
+Adult_nonsmoked_svy_title    Archived, see TOBACCO_INDICATOR
+R_admin_tax_stamps_cig       Tobacco tax administration: Tax stamps, fiscal marks, banderole or other types of marking are applied on cigarettes
+Yth_curr_tob_smoking         Prevalence of current tobacco smoking among adolescents (%)
+TOBACCO_MPOWER_M1_PREVALENCE Tobacco Monitor: population-based national surveys, tobacco use and smoking, prevalence
+R_admin_tax_stamps_other     Tobacco tax administration: Tax stamps, fiscal marks, banderole or other types of marking are applied on other tobacco products
+Yth_curr_tob_use             Prevalence of current tobacco use among adolescents (%)
+R_admin_identifier_track_and_trace Tobacco tax administration: Marking/unique identifier contains data for track and tracing purposes
+TOBACCO_MPOWER_M1_TOBACCOUSESMOKING Tobacco Monitor: population-based national surveys, tobacco use and smoking
+Yth_daily_tob_use            Prevalence of daily tobacco use among adolescents (%)
+TOBACCO_MPOWER_R_PRICE       Tobacco Raise taxes: Retail price for tobacco and nicotine products
+Adult_nonsmoked_svy_yr       Archived, see TOBACCO_INDICATOR
+R_admin_duty_free_banned     Tobacco tax administration: Sales of duty (or excise) free cigarettes banned
+TOBACCO_MPOWER_R_TAXREVENUEPREVIOUS Tobacco Raise taxes: Annual tax revenues from tobacco products, previous reporting period
+R_min_price_policy           Tobacco tax structure: A minimum price policy is implemented
+Adult_daily_cig_smoking      Archived, see TOBACCO_INDICATOR
+Adult_daily_tob_use          Archived, see TOBACCO_INDICATOR
+M_Est_smk_curr_std           Estimate of current tobacco smoking prevalence (%) (age-standardized)
+Adult_daily_tob_smoking      Archived, see TOBACCO_INDICATOR
+M_Est_tob_daily_std          Estimate of daily tobacco use prevalence (%) (age-standardized)
+Adult_daily_e-cig            Archived, see TOBACCO_INDICATOR
+NTCP_govt_exp                Annual budget for tobacco control in currency reported
+TOBACCO_MPOWER_O1_TREATMENTSUPPORT Tobacco Offer help: O1 Support for treatment of tobacco dependence / Availability of smoking cessation support
+M_Est_smk_curr_users         Number of current tobacco smokers, estimate
+Adult_curr_smokeless         Archived, see TOBACCO_INDICATOR
+E22_subnational_authority_exists Subnational bans on tobacco advertising, promotion and sponsorship authority exists
+R_admin_overt_marking        Tobacco tax administration: Marking is overt
+R_afford_price_gap_decreased Tobacco tax structure: Price gap decreased over the last two years (cheapest brand of cigarettes versus the premium brand)
+TOBACCO_MPOWER_P1_SMOKEFREEPLACES Tobacco MPOWER Protect people: P1 smoke-free places (national legislation)
+Yth_daily_smokeless          Prevalence of daily smokeless tobacco use among adolescents (%)
+Adult_nonsmoked_age_grp      Archived, see TOBACCO_INDICATOR
+TOBACCO_MPOWER_R_AFFORDABILITY Tobacco Raise taxes: Affordability
+PRISON_F1_TOBACCO_TOT        In-prison people who currently use tobacco  (number of prisoners)
+E_compl_e12                  Compliance with ban on indentifying non-tobacco products with tobacco brand names (score)
+R_admin_covert_marking       Tobacco tax administration: Marking is covert
+TOBACCO_MPOWER_M4_PREVALENCE Tobacco Monitor: school-based national surveys, smokeless tobacco or e-cigarettes, prevalence
+Adult_survey_title           Archived, see TOBACCO_INDICATOR
+E17c_csr_promo_others        Ban on entities other than tobacco companies/the tobacco industry publicizing the CSR activities of the tobacco companies/industry
+TOBACCO_MPOWER_R_TAX         Tobacco Raise taxes: National taxes for tobacco and nicotine products
+M_Est_tob_curr_users         Number of current of tobacco users, estimate
+M_Est_smk_daily_std          Estimate of daily tobacco smoking prevalence (%) (age-standardized)
+TOBACCO_MPOWER_OVERVIEW      Tobacco MPOWER overview: Monitor, Protect people, Offer help, Warn of dangers, Enforce bans, Raise taxes
+TOBACCO_MPOWER_O2_MEDICATIONAVAILABILITY Tobacco Offer help: O2 Availability of tobacco cessation medications
+Adult_svy_yr                 Archived, see TOBACCO_INDICATOR
+M_Est_tob_curr_std           Estimate of current tobacco use prevalence (%) (age-standardized)
+TOBACCO_MPOWER_NTCP          Tobacco MPOWER: National tobacco control programmes (NTCP)
+E_compl_e11                  Compliance with ban on use of brand name of non-tobacco product for tobacco product (score)
+==== alcohol  
+RSUD_590                     Prevention programmes for specific populations for alcohol
+RSUD_480                     Registration of medications for alcohol dependence and withdrawal
+RSUD_660                     Treatment programmes for women with alcohol use disorders
+RSUD_680                     Special housing services for alcohol use disorders
+RSUD_5                       Age-standardized DALYs, alcohol and drug use disorders, per 100 000
+RSUD_68                      Pharmacotherapy used for the management of alcohol withdrawal
+RSUD_580                     Prevention programmes for alcohol
+RSUD_700                     Employment services for alcohol use disorders
+RSUD_720                     Open access interventions for alcohol
+RSUD_740                     Health professionals providing treatment for alcohol and drug use disorders
+SA_0000001691                Central coordinating entity for alcohol policy implementation
+RSUD_44                      Treatment slots for alcohol and drug use disorders, outpatient, per 10 000
+SA_0000001694                Sectors represented in national alcohol policy
+SA_0000001692_ARCHIVED       Framework of national alcohol policy
+SA_0000001691_ARCHIVED       Central coordinating entity for alcohol policy implementation
+SA_0000001692                Framework of national alcohol policy
+SA_0000001693_ARCHIVED       Level of adoption of national alcohol policy
+SA_0000001694_ARCHIVED       Sectors represented in national alcohol policy
+SA_0000001696_ARCHIVED       Alcohol-related road traffic crashes with fatalities (% of all road traffic crashes with fatalities)
+SA_0000001697_ARCHIVED       Adopted written national policy on alcohol, year adopted
+RSUD_750                     Standards of care for professionals providing treatment for alcohol and drug use disorders
+RSUD_890                     Treatment programmes for children and adolescents with alcohol use disorders
+SA_0000001398                Alcohol, consumption of pure alcohol by type of beverage (%)
+SA_0000001400_ARCHIVED       Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol)
+SA_0000001401_ARCHIVED       Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol), three-year average
+SA_0000001402                Alcohol, estimate of five-year change in recorded per capita (15+) consumption 2006-2010
+SA_0000001405_ARCHIVED       Alcohol, tourist consumption (in litres of pure alcohol)
+SA_0000001406                Alcohol, unrecorded per capita (15+) consumption (in litres of pure alcohol)
+SA_0000001404                Alcohol, drinkers only per capita (15+) consumption in litres of pure alcohol, three-year average
+SA_0000001406_ARCHIVED       Alcohol, unrecorded per capita (15+) consumption (in litres of pure alcohol)
+SA_0000001409_ARCHIVED       Alcohol, abstainers lifetime (%)
+SA_0000001411_ARCHIVED       Alcohol, abstainers past 12 months (%)
+SA_0000001413                Alcohol, consumers past 12 months (%), age-standardized
+SA_0000001414_ARCHIVED       Alcohol, former drinkers (%)
+SA_0000001417                Alcohol, patterns of drinking score
+SA_0000001404_ARCHIVED       Alcohol, drinkers only per capita (15+)consumption in litres of pure alcohol
+SA_0000001409                Alcohol, abstainers lifetime (%), age-standardized
+SA_0000001411                Alcohol, abstainers past 12 months (%), age-standardized
+SA_0000001416                Alcohol, heavy episodic drinking (15+), drinkers only, past 30 days (%), age-standardized
+SA_0000001693                Level of adoption of national alcohol policy
+SA_0000001696                Alcohol-related road traffic crashes with fatalities (% of all road traffic crashes with fatalities)
+SA_0000001697                Adopted written national policy on alcohol, year adopted
+SA_0000001698                Adopted written national policy on alcohol, year revised
+SA_0000001698_ARCHIVED       Adopted written national policy on alcohol, year revised
+SA_0000001414                Alcohol, former drinkers (%), age-standardized
+SA_0000001415_ARCHIVED       Alcohol, heavy episodic drinking (population) past 30 days (%)
+SA_0000001417_ARCHIVED       Alcohol, patterns of drinking score
+SA_0000001418                Age-standardized DALYs, alcohol use disorders, per 100,000
+RS_208                       Attribution of road traffic deaths to alcohol (%)
+SA_0000001416_ARCHIVED       Alcohol, heavy episodic drinking (15+), drinkers only, past 30 days (%)
+SA_0000001700                Consumer information on alcohol and health at points of sale
+SA_0000001707                Persons with alcohol use disorders receiving treatment (%)
+SA_0000001708                Designation of alcohol tax revenues to health services
+SA_0000001714                Training in screening and brief interventions for alcohol problems
+SA_0000001715                Counselling to children in families with alcohol problems
+SA_0000001716                Counselling to pregnant women with alcohol problems
+RSUD_85                      NGOs for alcohol use disorders
+RSUD_850                     System of monitoring alcohol involvement in forensic pathology
+SA_0000001398_ARCHIVED       Alcohol, consumption of pure alcohol by type of beverage (%)
+SA_0000001400                Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol), by beverage type
+SA_0000001401                Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol), three-year average
+SA_0000001402_ARCHIVED       Alcohol, estimate of five-year change in recorded per capita (15+) consumption 2006-2010
+SA_0000001403                Alcohol, total (recorded 3 year average + unrecorded) per capita (15+) consumption (in litres of pure alcohol)
+SA_0000001403_ARCHIVED       Alcohol, total (recorded 3 year average + unrecorded) per capita (15+) consumption (in litres of pure alcohol)
+RSUD_270                     Financing methods for treatment for alcohol use disorders
+SA_0000001461                Alcohol dependence (15+ ), 12-month prevalence (%) with 95%CI
+SA_0000001461_ARCHIVED       Alcohol dependence (15+ ), 12-month prevalence (%) with 95%CI
+SA_0000001463                Alcoholic psychosis, incidence, per 100,000
+SA_0000001467                Perceived trend in alcohol-related harm and consequences
+SA_0000001470_ARCHIVED       Alcohol-related road traffic crashes, per 100,000 population
+RSUD_33                      Sector for residential long-term rehabilitation of alcohol use disorders
+SA_0000001437                Age-standardized death rates, alcohol use disorders, per 100,000
+RSUD_1                       Point prevalence (%), alcohol use disorders, 15+ years
+RSUD_180                     Involvement of representatives of affected or targeted populations in the development and implementation of national programmes for prevention for alcohol and drugs
+RSUD_210                     Voluntary treatment for people with alcohol use disorders in the criminal justice system
+SA_0000001462                Alcohol use disorders (15+), 12 month prevalence (%) with 95%
+SA_0000001462_ARCHIVED       Alcohol use disorders (15+), 12 month prevalence (%) with 95%
+RSUD_170                     Involvement of representatives of affected or targeted populations in the development and formulation of policies and strategies for prevention for alcohol and drugs
+RSUD_370                     Specialized treatment facilities for alcohol use disorders
+SA_0000001466                Hospital discharges, alcoholic liver disease, per 100,000
+SA_0000001468                Treatment admissions (inpatient), alcohol dependence, per 100,000
+RSUD_29                      Sector for inpatient detoxification of alcohol use disorders
+RSUD_3                       Age-standardized death rates, alcohol and drug use disorders, per 100 000
+SA_0000001474                Alcoholic excise tax revenue as a per cent of government revenue
+SA_0000001474_ARCHIVED       Alcoholic excise tax revenue as a per cent of government revenue
+SA_0000001475_ARCHIVED       Annual revenues from alcohol excise tax in millions US$
+SA_0000001477_ARCHIVED       Social costs of alcohol use in millions US$
+RSUD_32                      Sector for the treatment of alcohol-induced psychoses and other alcohol-induced psychiatric conditions
+SA_0000001463_ARCHIVED       Alcoholic psychosis, incidence, per 100,000
+SA_0000001465                Hospital discharges, alcohol-related injuries and poisoning, per 100,000
+SA_0000001472                Alcohol-related injury mortality, per 1,000
+SA_0000001476                Alcohol expenditure as a per cent of total household expenditure
+SA_0000001476_ARCHIVED       Alcohol expenditure as a per cent of total household expenditure
+SA_0000001405                Alcohol, tourist consumption (in litres of pure alcohol)
+SA_0000001413_ARCHIVED       Alcohol, consumers past 12 months (%)
+RS_207                       Blood Alcohol Concentration (BAC) limit for drivers
+SA_0000001502_ARCHIVED       Adopted written national policy on alcohol
+SA_0000001503_ARCHIVED       Alcoholic beverage legally defined
+SA_0000001506_ARCHIVED       National legislation to prevent illegal alcohol
+SA_0000001541_ARCHIVED       Restrictions on sales promotion from owners of pubs and bars (alcohol for free)
+SA_0000001502                Adopted written national policy on alcohol
+SA_0000001504                Alcohol use is banned
+SA_0000001506                National legislation to prevent illegal alcohol
+SA_0000001523_ARCHIVED       Prices for alcoholic beverages (average, US$)
+SA_0000001520                Legal blood alcohol concentration (BAC) limits
+SA_0000001520_ARCHIVED       Legal blood alcohol concentration (BAC) limits
+SA_0000001546                Excise tax as a per cent of the retail price of alcoholic beverages
+SA_0000001456                Age-standardized death rates (15+ years), alcoholic liver disease, per 100,000
+SA_0000001469                Treatment admissions (inpatient), alcoholic psychosis, per 100,000
+SA_0000001470                Alcohol-related road traffic crashes, per 100,000 population
+SA_0000001471                Alcohol-related road traffic crashes (% of all traffic crashes)
+RSUD_230                     Compulsory treatment for people with alcohol use disorders in the criminal justice system
+RSUD_27                      Government benefits for alcohol use disorders, subsidy or disability pension
+RSUD_30                      Sector for inpatient treatment of alcohol dependence
+RSUD_300                     Government benefits for people with alcohol use disorders
+RSUD_31                      Sector for outpatient treatment of alcohol dependence
+RSUD_320                     Main sector for treatment for alcohol use disorders
+SA_0000001549                Duty paid or excise stamp on alcohol container
+SA_0000001550                Excise tax on alcoholic beverages
+SA_0000001553_ARCHIVED       Restrictions on alcohol use in public places
+SA_0000001550_ARCHIVED       Excise tax on alcoholic beverages
+SA_0000001553                Restrictions on alcohol use in public places
+SA_0000001555_ARCHIVED       Health warning labels on alcohol containers
+SA_0000001706                National treatment policy for alcohol use disorders
+SA_0000001717                Prevention/counselling at workplaces for those with alcohol problems
+SA_0000001704                Data collection on alcohol-related health indicators
+SA_0000001705                System for monitoring alcohol-related harm
+SA_0000001725                National alcohol policy specifically involves young people activities
+SA_0000001710                Public-funded alcohol research/monitoring programmes
+SA_0000001711                Public funds designated for alcohol research/monitoring programmes, in Euros
+SA_0000001548_ARCHIVED       Excise tax as a per cent of the total retail price for 1 litre of pure alcohol
+SA_0000001551_ARCHIVED       Value-added tax (VAT) on alcohol (%)
+SA_0000001554                Health warning labels on alcohol advertising
+SA_0000001554_ARCHIVED       Health warning labels on alcohol advertising
+SA_0000001555                Health warning labels on alcohol containers
+SA_0000001471_ARCHIVED       Alcohol-related road traffic crashes (% of all traffic crashes)
+SA_0000001473                Alcohol-related disease mortality, per 100,000 (15+ years)
+SA_0000001475                Annual revenues from alcohol excise tax in millions US$
+SA_0000001477                Social costs of alcohol use in millions US$
+SA_0000001503                Alcoholic beverage legally defined
+SA_0000001504_ARCHIVED       Alcohol use is banned
+RSUD_340                     Treatment programmes for children and adolescents with alcohol use disorders
+SA_0000001523                Prices for alcoholic beverages (average, US$)
+SA_0000001688                Alcohol, total per capita (15+) consumption (in litres of pure alcohol) (SDG Indicator 3.5.2), three-year average
+SA_0000001734                Number of standard alcoholic drinks displayed on containers
+SA_0000001688_ARCHIVED       Total (recorded+unrecorded) alcohol per capita (15+) consumption
+SA_0000001740                Alcohol-attributable Years of Life Lost (YLL) score
+SA_0000001741                Alcohol-attributable fractions (15+), liver cirrhosis deaths (%)
+SA_0000001732_ARCHIVED       New types of alcoholic beverages emerging
+SA_0000001734_ARCHIVED       Number of standard alcoholic drinks displayed on containers
+SA_0000001736                Action Plan for implementation of alcohol policy
+SA_0000001737_ARCHIVED       Alcohol, regional per capita (15+) consumption (in litres of pure alcohol)
+SA_0000001740_ARCHIVED       Alcohol-attributable Years of Life Lost (YLL) score
+SA_0000001743                Alcohol-attributable fractions, all-cause deaths (%)
+SA_0000001541                Restrictions on sales promotion from owners of pubs and bars (alcohol for free)
+SA_0000001546_ARCHIVED       Excise tax as a per cent of the retail price of alcoholic beverages
+SA_0000001548                Excise tax as a per cent of the total retail price for 1 litre of pure alcohol
+SA_0000001549_ARCHIVED       Duty paid or excise stamp on alcohol container
+SA_0000001551                Value-added tax (VAT) on alcohol (%)
+SA_0000001742_ARCHIVED       Alcohol-attributable fractions (15+), road traffic crash deaths (%)
+SA_0000001743_ARCHIVED       Alcohol-attributable fractions, all-cause deaths (%)
+SA_0000001739                Alcohol, heavy episodic drinking (15+) past 30 days (%), age-standardized
+SA_0000001739_ARCHIVED       Alcohol, heavy episodic drinking (15+) past 30 days (%), age-standardized with 95%CI
+SA_0000001748                Alcohol, unrecorded per capita (15+) consumption (in litres of pure alcohol) with 95%CI
+SA_0000001744_ARCHIVED       Alcohol, regional prevalence of alcohol dependence (%)
+SA_0000001745                Alcohol, regional prevalence of alcohol use disorders (%)
+SA_0000001747                Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol), three-year average
+SA_0000001753_ARCHIVED       Alcohol use disorders (15+), 12 month prevalence (%), age standardized, with 95%CI
+SA_0000001749                Alcohol, total (recorded 3 year average + unrecorded) per capita (15+) consumption (in litres of pure alcohol) with 95%CI
+SA_0000001765                Legal obligation for schools to include alcohol use prevention
+SA_0000001754                Alcohol, harmful use (15+), 12 month prevalence (%) with 95%CI
+SA_0000001773_ARCHIVED       National surveys on adult alcohol consumption
+SA_0000001774                National surveys on youth alcohol consumption
+SA_0000001781                15-years old any alcoholic beverage consumed in past 12 months, (%)
+SA_0000001760                15-19 years old total alcohol consumption in litres of pure alcohol
+SA_0000001761                National guidelines for the prevention and reduction of alcohol-related harm in schools
+SA_0000001763                Workplace representatives nationally involved to prevent and address alcohol-related harm
+SA_0000001767                Legislation on alcohol testing at workplaces
+SA_0000001771                Comprehensive and regular reporting of alcohol situation
+SA_0000001773                National surveys on adult alcohol consumption
+SA_0000001777                Data collected on harm from alcohol at workplace
+SA_0000001777_ARCHIVED       Data collected on harm from alcohol at workplace
+SA_0000001762                National guidelines for alcohol problem prevention and counselling at workplaces
+SA_0000001762_ARCHIVED       National guidelines for alcohol problem prevention and counselling at workplaces
+SA_0000001765_ARCHIVED       Legal obligation for schools to include alcohol use prevention
+SA_0000001725_ARCHIVED       National alcohol policy specifically involves young people activities
+SA_0000001732                New types of alcoholic beverages emerging
+SA_0000001735                Alcohol content displayed on containers
+SA_0000001735_ARCHIVED       Alcohol content displayed on containers
+SA_0000001736_ARCHIVED       Action Plan for implementation of alcohol policy
+SA_0000001737                Alcohol, regional per capita (15+) consumption (in litres of pure alcohol)
+SA_0000001741_ARCHIVED       Alcohol-attributable fractions (15+), liver cirrhosis deaths (%)
+SA_0000001742                Alcohol-attributable fractions (15+), road traffic crash deaths (%)
+SA_0000001744                Alcohol, regional prevalence of alcohol dependence (%)
+SA_0000001745_ARCHIVED       Alcohol, regional prevalence of alcohol use disorders (%)
+SA_0000001746                Alcohol, total  (recorded + unrecorded) per capita (15+) consumption with 95%CI, projections to 2025
+SA_0000001746_ARCHIVED       Alcohol, total  (recorded + unrecorded) per capita (15+) consumption with 95%CI, projections to 2025
+SA_0000001747_ARCHIVED       Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol), three-year average with 95%CI
+SA_0000001748_ARCHIVED       Alcohol, unrecorded per capita (15+) consumption (in litres of pure alcohol) with 95%CI
+SA_0000001749_ARCHIVED       Alcohol, total (recorded 3 year average + unrecorded) per capita (15+) consumption (in litres of pure alcohol) with 95%CI
+SA_0000001751                Alcohol, average daily intake in grams among drinkers, three-year average
+SA_0000001751_ARCHIVED       Alcohol, average daily intake in grams among drinkers with 95%CI
+SA_0000001752                Alcohol, total (recorded + unrecorded) per capita (15+) consumption, projected estimates for 2016
+SA_0000001752_ARCHIVED       Alcohol, total (recorded + unrecorded) per capita (15+) consumption, projected estimates for 2016
+SA_0000001754_ARCHIVED       Alcohol, harmful use (15+), 12 month prevalence (%) with 95%CI
+SA_0000001760_ARCHIVED       15-19 years old total alcohol consumption in litres of pure alcohol
+SA_0000001761_ARCHIVED       National guidelines for the prevention and reduction of alcohol-related harm in schools
+SA_0000001763_ARCHIVED       Workplace representatives nationally involved to prevent and address alcohol-related harm
+SA_0000001767_ARCHIVED       Legislation on alcohol testing at workplaces
+SA_0000001769                National systems for monitoring alcohol consumption and harms
+SA_0000001769_ARCHIVED       National systems for monitoring alcohol consumption and harms
+SA_0000001771_ARCHIVED       Comprehensive and regular reporting of alcohol situation
+SA_0000001784_ARCHIVED       15-years old, any alcoholic beverage consumed at least once a week, (%)
+SA_0000001774_ARCHIVED       National surveys on youth alcohol consumption
+SA_0000001776                Data collection on Foetal Alcohol Syndome
+SA_0000001776_ARCHIVED       Data collection on Foetal Alcohol Syndome
+SA_0000001783                15-years old any alcoholic beverage consumed in past 30 days, (%)
+SA_0000001783_ARCHIVED       15-years old any alcoholic beverage consumed in past 30 days, (%)
+SA_0000001788                Alcohol-related road traffic crashes with fatalities, per 100,000  population
+SA_0000001788_ARCHIVED       Alcohol-related road traffic crashes with fatalities, per 100,000  population
+SA_0000001789_ARCHIVED       Alcohol-related crimes (% of all crimes)
+SA_0000001792                National legislation to prevent illegal alcohol sales
+SA_0000001796                Licensing required for wholesale/distribution of alcoholic beverages
+SA_0000001781_ARCHIVED       15-years old any alcoholic beverage consumed in past 12 months, (%)
+SA_0000001801                Monopoly on imports of alcoholic beverages
+SA_0000001822_ARCHIVED       Alcohol, total per capita (15+) consumption (in litres of pure alcohol) with 95%CI
+SA_0000001784                15-years old, any alcoholic beverage consumed at least once a week, (%)
+SA_0000001786                13-15-years old any alcoholic beverage consumed in past 30 days, (%)
+SA_0000001786_ARCHIVED       13-15-years old any alcoholic beverage consumed in past 30 days, (%)
+SA_0000001795                Licensing required for imports of alcoholic beverages
+SA_0000001802                Monopoly on wholesale /distribution of alcoholic beverages
+SA_0000001789                Alcohol-related crimes (% of all crimes)
+SA_0000001794                Licensing required for exports of alcoholic beverages
+SA_0000001800                Monopoly on exports of alcoholic beverages
+SA_0000001808                Alcohol-attributable fractions (15+), cancer deaths
+SA_0000001812                Report with data from health services on alcohol use and AUDs
+SA_0000001816                Tax incentives for production low/no alcohol content beer
+SA_0000001817                Tax incentives for production of other alcoholic beverages
+SA_0000001821                Alcohol, unrecorded per capita (15+) consumption (in litres of pure alcohol), three-year average
+SA_0000001823                Alcohol, tourist consumption (in litres of pure alcohol), three-year average
+SA_0000001818                Alcohol, total  (recorded + unrecorded) per capita (15+) consumption, projections
+SA_0000001821_ARCHIVED       Alcohol, unrecorded per capita (15+) consumption (in litres of pure alcohol) with 95%CI
+SA_0000001823_ARCHIVED       Alcohol, tourist consumption (in litres of pure alcohol)
+SA_0000001824                Alcohol, regional alcohol per capita (15+) consumption (in litres of pure alcohol)
+SA_0000001809                National system of epidemiological data collection for alcohol use
+SA_0000001813                National organization for monitoring alcohol
+SA_0000001822                Alcohol, total per capita (15+) consumption (in litres of pure alcohol) with 95%CI
+NCD_CCS_AlcPlan              Existence of operational policy/strategy/action plan to reduce the harmful use of alcohol
+SA_0000001845                Average daily intake in grams of alcohol, population (15+)
+SA_0000001828_AA             Regional prevalence, alcohol-attributable DALYs, (%)
+SA_0000001842                Alcohol, 15-19 years heavy continuous drinkers, drinkers only, past year (%)
+SA_0000001839                Alcohol, heavy continuous drinkers past year (%)
+SA_0000001841                Alcohol, 15-19 years heavy continuous drinkers past year (%)
+SA_0000001833                Alcohol-attributable DALYs per 100,000 people (age standardized)
+SA_0000001843                Alcohol-attributable DALYs lost from all causes (all ages), (number)
+TAXBEV_ABV                   Alcohol content in beverage in percent of volume, (alcohol by volume) (ABV %)
+TAXBEV_VATSPECIAL_YN         Special VAT (or sales tax) rate on non-alcoholic beverages (different from the standard VAT rate)
+NCD_CCS_ALC_MGMT_GUIDE       Existence of evidence-based national guidelines/protocols/standards for the management of alcohol use disorders
+PRISON_F1_ALCOHOL_TOT        In-prison people who drink/drank alcohol (number of prisoners, in the last 12 months)
+TAXBEV_ALCOHOLBASEDTIERED    If tiered on the beverage, the tiers are alcohol-based
+SA_0000001837                Alcohol poisoning deaths, per 100,000 population
+SA_0000001838                Alcohol-related cardiomyopathy deaths (% of all cardiomyopathy deaths)
+TAXBEV_EXCISE_UNIFORMTIERED_ALCOHOLIC Uniform or tiered excise tax system applied on alcoholic beverage
+TAXBEV_ALCOHOLSALESTATUS     Status of alcohol sale
+SA_0000001848                Alcohol, product placement restrictions in e-sports
+SA_0000001459_AA             Road traffic crash deaths, alcohol-attributable, age-standardized death rates, per 100,000 population
+SA_0000001807_AA             Cancer, alcohol-attributable, age-standardized death rates, per 100,000 population
+NCD_CCS_ALC_SVY              Has conducted a recent, national adult risk factor survey covering harmful alcohol use
+SA_0000001840                Alcohol, heavy continuous drinkers, drinkers only, past year (%)
+SA_0000001834                Percent of all DALYs attributable to alcohol
+SA_0000001835                Alcohol-related road traffic deaths, per 100,000 population
+SA_0000001836                Alcohol-related road traffic deaths (% of all road traffic deaths)
+NCD_CCS_ALC_TARGET           Existence of a national target on alcohol
+SA_0000001832                Alcohol-attributable all-cause deaths per 100,000, age standardized
+SA_0000001849                Remote ordering of alcohol regulated
+TAXBEV_EXCISE_UNIFORMTIERED_NONALCOHOLIC Uniform or tiered excise tax system applied on non-alcoholic beverage
+SA_0000001847                Alcohol, product placement restrictions in digital media
+SA_0000001457_AA             Liver cirrhosis, alcohol-attributable, age-standardized death rates, per 100,000 population
+SA_0000001844                Alcohol-attributable all-cause deaths (all ages), (number)
+==== obesity  
+EQ_OVERWEIGHTADULT           Prevalence of overweight and obesity
+obesewm                      Obesity prevalence in non-pregnant women aged 15-49 years, BMI >= 30 (%)
+==== maternal  
+MDG_0000000026               Maternal mortality ratio (per 100 000 live births)
+MDG_0000000032               Maternal mortality ratio (per 100 000 live births) - Country reported estimates
+UHC_SCI_RMNCH                UHC Service Coverage sub-index on reproductive, maternal, newborn and child health
+WHS10_5                      Number of national population surveys - maternal mortality
+MORT_MATERNALNUM             Number of maternal deaths
+==== neonatal  
+CM_03                        Number of neonatal deaths
+WHS2_515                     Distribution of causes of death among children aged <5 years (%) - Neonatal sepsis
+WHS3_56                      Neonatal tetanus - number of reported cases
+WHS4_128                     Neonates protected at birth against neonatal tetanus (PAB) (%)
+WHOSIS_000003                Neonatal mortality rate (per 1000 live births)
+nmr                          Neonatal mortality rate (deaths per 1000 live births)
+==== traffic  
+SA_0000001696_ARCHIVED       Alcohol-related road traffic crashes with fatalities (% of all road traffic crashes with fatalities)
+SA_0000001696                Alcohol-related road traffic crashes with fatalities (% of all road traffic crashes with fatalities)
+RS_196                       Estimated number of road traffic deaths
+RS_208                       Attribution of road traffic deaths to alcohol (%)
+RS_246                       Distribution of road traffic deaths by type of road user (%)
+SA_0000001470_ARCHIVED       Alcohol-related road traffic crashes, per 100,000 population
+SA_0000001433                Age-standardized DALYs, road traffic accidents, per 100,000
+SA_0000001459                Road traffic crash deaths, age-standardized death rates (15+), per 100,000 population
+SA_0000001459_ARCHIVED       Road traffic crash deaths, age-standardized death rates (15+), per 100,000 population
+RS_198                       Estimated road traffic death rate (per 100 000 population)
+SA_0000001452                Age-standardized death rates, road traffic accidents, per 100,000
+SA_0000001470                Alcohol-related road traffic crashes, per 100,000 population
+SA_0000001471                Alcohol-related road traffic crashes (% of all traffic crashes)
+SA_0000001471_ARCHIVED       Alcohol-related road traffic crashes (% of all traffic crashes)
+SA_0000001742_ARCHIVED       Alcohol-attributable fractions (15+), road traffic crash deaths (%)
+SA_0000001742                Alcohol-attributable fractions (15+), road traffic crash deaths (%)
+SA_0000001788                Alcohol-related road traffic crashes with fatalities, per 100,000  population
+SA_0000001788_ARCHIVED       Alcohol-related road traffic crashes with fatalities, per 100,000  population
+SDGROADAGE                   Age-standardized road traffic  mortality (per 100 000 population)
+SA_0000001826                Regional prevalence, AAFs (15+), road traffic crash deaths (%)
+SA_0000001459_AA             Road traffic crash deaths, alcohol-attributable, age-standardized death rates, per 100,000 population
+SA_0000001835                Alcohol-related road traffic deaths, per 100,000 population
+SA_0000001836                Alcohol-related road traffic deaths (% of all road traffic deaths)
+==== malnutrition  
+==== cancer  
+SA_0000001419                Age-standardized DALYs, breast cancer, per 100,000
+SA_0000001426                Age-standardized DALYs, liver cancer, per 100,000
+SA_0000001439                Age-standardized death rates, colon and rectum cancers, per 100,000
+SA_0000001445                Age-standardized death rates, liver cancer, per 100,000
+SA_0000001429                Age-standardized DALYs, mouth and oropharynx cancer, per 100,000
+SA_0000001449                Age-standardized death rates, oesophagus cancer, per 100,000
+SA_0000001438                Age-standardized death rates, breast cancer, per 100,000
+SA_0000001448                Age-standardized death rates, mouth and oropharynx cancer, per 100,000
+SA_0000001420                Age-standardized DALYs, colon and rectum cancers, per 100,000
+RADON_Q803                   Inclusion of radon in national cancer control strategy
+SA_0000001430                Age-standardized DALYs, oesophagus cancer, per 100,000
+WHS2_160                     Age-standardized mortality rate by cause (per 100 000 population) - Cancer
+SA_0000001808                Alcohol-attributable fractions (15+), cancer deaths
+SA_0000001827                Regional prevalence, AAFs (15+), cancer
+SA_0000001807                Cancer, age-standardized death rates (15+), per 100,000 population
+NCD_CCS_BreastCancer         General availability of breast cancer screening (by palpation or mammogram) at the primary health care level
+NCD_CCS_CancerPlan           Existence of operational policy/strategy/action plan for cancer
+NCD_CCS_BowelCancer          General availability of colon cancer screening at the primary health care level
+NCD_CCS_breastcancerscreening Existence of national screening program for breast cancer
+NCD_CCS_cervicalcancermethod Most widely used screening method in national cervical cancer screening program
+NCD_CCS_cervicalcancerscreening Existence of national screening program for cervical cancer
+NCD_CCS_CancerRegNational    Existence of population-based cancer registry
+NCD_CCS_cervicalcancerpgmtype Type of national cervical cancer screening program
+NCDMORT3070                  Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease
+ORAL_HEALTH_CANCER_LIPORALCAVITY_NEWCASE_NUMBER Number of new cases of lip and oral cavity cancer
+NCD_CCS_CANCER_GUIDE         Existence of evidence-based national guidelines/protocols/standards for the management of cancer
+NCD_CCS_cancer_surgery       General availability of cancer surgery in the public sector
+ORAL_HEALTH_CANCER_LIPORALCAVITY_100K Incidence rate of lip and oral cavity cancer (per 100 000 population)
+NCD_CCS_CANCER_DEPT          General availability of cancer centres or cancer departments at tertiary level in the public sector
+CANCERSURVIVAL_CHILDREN_LEUKAEMIA Childhood cancer survival for lymphoid leukaemia, age-standardized 5-year net survival (%)
+SA_0000001807_AA             Cancer, alcohol-attributable, age-standardized death rates, per 100,000 population
+CANCERSURVIVAL_BREASTCANCER  Cancer survival for those diagnosed with breast cancer, 5-year net survival (%)
+NCD_CCS_cervicalcancerpgmcvg Coverage of national cervical cancer screening program (%)
+NCD_CCS_PBCR                 Existence of population-based cancer registry
+PRISON_D4_CANCER_DIAG_TOT    In-prison cancer diagnosis (number of diagnoses)
+NCD_CXCA_SCREENED_WITHIN_TIMEPERIOD Prevalence of cervical cancer screening  among women aged 30-49 years (%)
+==== polio  
+poliov                       Polio immunization coverage among one-year-olds (%)
+WHS3_49                      Poliomyelitis - number of reported cases
+WHS4_544                     Polio vaccine: inactivated second or third-dose polio vaccine (IPVc) immunization coverage by the locally recommended age (%) (WUENIC)
+VACCINECOVERAGE_IPV1         Inactivated first-dose polio vaccine (IPV1) immunization coverage among 1-year-olds (%) (WUENIC)
+VACCINEPREVENTABLE_WILDPOLIO Number of reported cases of poliomyelitis by wild poliovirus (WPV)
+==== pneumococcal  
+PCV3                         Pneumococcal conjugate second or third-dose vaccines (PCVc) immunization coverage by the locally recommended age (%) (WUENIC)

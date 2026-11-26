@@ -359,6 +359,8 @@ def parse(db: Session, question: str) -> Parsed:
 UNIT_TXT = {
     "per_100k": ("per 100,000 population", "به‌ازای هر ۱۰۰٬۰۰۰ نفر جمعیت"),
     "per_1000": ("per 1,000 population", "به‌ازای هر ۱۰۰۰ نفر جمعیت"),
+    "per_100k_births": ("per 100,000 live births", "به‌ازای هر ۱۰۰٬۰۰۰ تولد زنده"),
+    "per_1000_births": ("per 1,000 live births", "به‌ازای هر ۱۰۰۰ تولد زنده"),
     "count": ("persons / events", "نفر / مورد"),
     "percent": ("%", "٪"),
     "years": ("years", "سال"),
