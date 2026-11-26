@@ -225,3 +225,15 @@ def test_with_retry_recovers_from_dropped_connection(env, monkeypatch):
         calls["n"] = -10
         with pytest.raises(OperationalError):
             with_retry(db, flaky, tries=2)
+
+
+def test_who_parse_rows_age_group_filter():
+    from etl.who_gho import parse_rows
+    base = dict(SpatialDim="IRN", TimeDimType="YEAR", TimeDim="2020", NumericValue=5.0)
+    raw = [
+        dict(base, Dim1="SEX_BTSX", Dim2="AGEGROUP_YEARS18-PLUS"),
+        dict(base, Dim1="SEX_MLE", Dim2="AGEGROUP_YEARS30-PLUS"),     # different age base: must not be mixed in
+        dict(base, Dim1="SEX_BTSX", Dim2=None),
+    ]
+    assert len(parse_rows(raw, "estimated", "AGEGROUP_YEARS18-PLUS")) == 1
+    assert len(parse_rows(raw, "estimated")) == 1                      # default: only rows without an age dimension

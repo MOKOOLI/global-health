@@ -45,7 +45,8 @@ def fetch_rows(code: str) -> list[dict]:
     return out
 
 
-def parse_rows(raw: list[dict], quality: str) -> list[dict]:
+def parse_rows(raw: list[dict], quality: str, dim2: str | None = None) -> list[dict]:
+    """dim2: the one age-group value to accept when the indicator is published by age group (all other values are skipped)."""
     rows = []
     for r in raw:
         if r.get("TimeDimType") != "YEAR" or r.get("NumericValue") is None:
@@ -55,7 +56,12 @@ def parse_rows(raw: list[dict], quality: str) -> list[dict]:
         dim1 = r.get("Dim1")
         if dim1 is not None and dim1 not in SEX_MAP:
             continue
-        if r.get("Dim2") or r.get("Dim3"):
+        if r.get("Dim3"):
+            continue
+        if dim2 is None:
+            if r.get("Dim2"):
+                continue
+        elif r.get("Dim2") != dim2:
             continue
         rows.append(
             dict(
@@ -90,7 +96,7 @@ def load_who(db: Session, only: str | None = None) -> dict:
                 )
                 continue
             disease = diseases.get(cfg["disease"]) if cfg["disease"] else None
-            rows = [r for r in parse_rows(fetch_rows(code), cfg["quality"]) if r["country_iso3"] in countries]  # download first
+            rows = [r for r in parse_rows(fetch_rows(code), cfg["quality"], cfg.get("dim2")) if r["country_iso3"] in countries]  # download first
 
             def write(cfg=cfg, code=code, name=name, disease=disease, rows=rows):
                 ind = upsert_indicator(
