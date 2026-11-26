@@ -80,6 +80,7 @@ def meta(db: Session = Depends(get_db)):
             countries=db.scalar(select(func.count()).select_from(Country)),
             diseases=db.scalar(select(func.count()).select_from(Disease)),
             indicators=db.scalar(select(func.count()).select_from(Indicator)),
+            diseases_with_data=db.scalar(select(func.count(func.distinct(Indicator.disease_id)))),
             observations=db.scalar(select(func.count()).select_from(Observation)),
         ),
     )

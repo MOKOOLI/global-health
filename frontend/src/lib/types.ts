@@ -110,7 +110,7 @@ export interface Meta {
   disclaimer: { en: string; fa: string };
   sources: SourceInfo[];
   has_synthetic: boolean;
-  counts: { countries: number; diseases: number; indicators: number; observations: number };
+  counts: { countries: number; diseases: number; diseases_with_data?: number; indicators: number; observations: number };
 }
 
 export interface CountryItem {

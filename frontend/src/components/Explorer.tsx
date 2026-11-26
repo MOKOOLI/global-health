@@ -142,7 +142,11 @@ export default function Explorer({ fixedDisease, initialCountry }: Props) {
           })()}
         </div>
 
-        {detail.data && detail.data.indicators.length === 0 && <p className="muted">{t("no_data_for_disease")}</p>}
+        {detail.data && detail.data.indicators.length === 0 && (
+          <p className="notice">{t("no_data_for_disease")}{" "}
+            <a href={`/${locale}/explore`}>{locale === "fa" ? "بیماری‌های دارای داده را ببینید" : "See diseases that have data"}</a>
+          </p>
+        )}
 
         {detail.data && detail.data.indicators.length > 0 && (
           <div className="controls">

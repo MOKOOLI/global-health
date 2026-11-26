@@ -72,7 +72,7 @@ export default function Landing() {
             </div>
             {meta && (
               <p className="hero-stats">
-                {num(meta.counts.countries, 0)} {L === "fa" ? "کشور" : "countries"} · {num(meta.counts.diseases, 0)} {L === "fa" ? "بیماری" : "diseases"}
+                {num(meta.counts.countries, 0)} {L === "fa" ? "کشور" : "countries"} · {num(meta.counts.diseases_with_data ?? meta.counts.diseases, 0)} {L === "fa" ? "بیماری دارای داده" : "diseases with data"} · {num(meta.counts.observations, 0)} {L === "fa" ? "مشاهده" : "observations"}
               </p>
             )}
           </div>
