@@ -66,6 +66,7 @@ export default function Header() {
     { href: `/${locale}/explore`, label: t("nav_explore"), active: path.startsWith(`/${locale}/explore`) || path.startsWith(`/${locale}/disease`) || path.startsWith(`/${locale}/country`) },
     { href: `/${locale}/ask`, label: locale === "fa" ? "پرسش" : "Ask", active: path.startsWith(`/${locale}/ask`) },
     { href: `/${locale}/surveillance`, label: locale === "fa" ? "هشدار زودهنگام" : "Early warning", active: path.startsWith(`/${locale}/surveillance`) },
+    { href: `/${locale}/viz`, label: locale === "fa" ? "نمودارهای زنده" : "Live charts", active: path.startsWith(`/${locale}/viz`) },
     { href: `/${locale}/learn`, label: locale === "fa" ? "آموزش" : "Learn", active: path.startsWith(`/${locale}/learn`) },
     { href: `/${locale}/compare`, label: t("nav_compare"), active: path.startsWith(`/${locale}/compare`) },
     { href: `/${locale}/tools`, label: locale === "fa" ? "ابزارها" : "Tools", active: path.startsWith(`/${locale}/tools`) },

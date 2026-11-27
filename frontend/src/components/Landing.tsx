@@ -16,8 +16,9 @@ const C = {
     replayTitle: "COVID-19، از ۲۰۲۰ تا ۲۰۲۳، هفته به هفته",
     replayNote: "هر هفته فقط با داده‌ی همان زمان محاسبه شده؛ همان کاری که امروز هم برای هشدار انجام می‌شود.",
     paths: [
-      { href: "explore", t: "کاوش", d: "نقشه‌ی بروز، شیوع و مرگ‌ومیر برای بیش از ۱۲۰ بیماری و همه‌ی کشورها، با روند، پیش‌بینی و توضیح." },
+      { href: "explore", t: "کاوش", d: "نقشه‌ی بروز، شیوع و مرگ‌ومیر برای بیماری‌های دارای داده (فهرست ۱۲۰+ بیماری در حال تکمیل است) و همه‌ی کشورها، با روند، پیش‌بینی و توضیح." },
       { href: "surveillance", t: "هشدار زودهنگام", d: "وضعیت هفتگی هر کشور: اندمیک، تحت نظر یا بالاتر از حد انتظار؛ الگوی چندکشوری و ماشین زمان." },
+      { href: "viz", t: "نمودارهای زنده", d: "حباب‌های متحرک، شبکه‌ی شباهت کشورها و روایت زوم‌پذیر، همه از داده‌ی بارگذاری‌شده." },
       { href: "learn", t: "آموزش", d: "واژه‌نامه، نحوه‌ی خواندن نمودار و بازپخش شیوع‌های واقعی برای کلاس و مطالعه." },
     ],
     trustTitle: "چرا می‌شود به آن اتکا کرد، و کجا نباید",
@@ -35,8 +36,9 @@ const C = {
     replayTitle: "COVID-19, 2020 to 2023, week by week",
     replayNote: "Each week is computed using only the data known at that time, exactly as the live warning works today.",
     paths: [
-      { href: "explore", t: "Explore", d: "Maps of incidence, prevalence and mortality for over 120 diseases and every country, with trends, forecasts and plain-language findings." },
+      { href: "explore", t: "Explore", d: "Maps of incidence, prevalence and mortality for the diseases that have data loaded (a catalogue of 120+ is being filled in) and every country, with trends, forecasts and plain-language findings." },
       { href: "surveillance", t: "Early warning", d: "Weekly status for each country: endemic, watch or above expected; multi-country patterns and a time machine." },
+      { href: "viz", t: "Live charts", d: "Animated bubbles, a country similarity network and a zoomable story, all built from the loaded data." },
       { href: "learn", t: "Learn", d: "Glossary, how to read a chart, and replays of real outbreaks for class and self-study." },
     ],
     trustTitle: "Why you can rely on it, and where not to",

@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+- Live charts (`/{locale}/viz`): animated Gapminder-style bubbles (any two indicators, year playback, pinned trails), country similarity network (percentile-rank distance, k-nearest links, label-propagation groups; explicitly not transmission), and a zoomable story generated from the loaded data. API: `/api/viz/options`, `/api/viz/bubbles`, `/api/viz/similarity`.
 - Frontend: automatic retry on 502/503/504 and network errors, plus a "server is waking up" notice (free Render/Neon hosts sleep when idle).
 - WHO 2000 standard population weights verified against the published table (total 100.035, normalised); "from memory" warnings removed.
 - Home page shows diseases that actually have data and the number of observations; empty disease pages link to diseases with data.

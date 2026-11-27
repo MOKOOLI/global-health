@@ -150,6 +150,7 @@ Text or voice ("breast cancer in the UK 2020?" / «آمار سرطان سینه 
   for COVID-19 (2020) and mpox (2022). Replays use `/api/surveillance/{disease}/frames`; if the API has no data the page falls
   back to the bundled `frontend/public/demo/*-replay.json` (generated from JHU CSSE / OWID, CC BY 4.0). Official dates shown in
   lessons are from memory: verify against WHO before using them in teaching.
+- **Live charts** (`/{locale}/viz`): animated bubbles (`/api/viz/bubbles?x=&y=`), similarity network (`/api/viz/similarity`) and a zoomable story. Frames use only real (country, year) pairs where both indicators are measured; the network shows statistical similarity of reported burden, not disease spread. Respects reduced-motion; every chart has a table or list alternative.
 - **CSV and citation**: `/api/export/indicator/{code}.csv`, `/api/export/surveillance/{disease}/{iso3}.csv`, `/api/cite`
   (APA + BibTeX). Cite the original provider too. Set `PUBLIC_URL` so citations carry your real domain.
 - **Live refresh**: `python -m etl.run live` runs every feed in `backend/etl/live_feeds.json` (WHO GHO, WHO DON, OWID mpox,
