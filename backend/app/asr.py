@@ -5,8 +5,8 @@ country's age-specific rates to one common standard population.
 
 Standard populations:
 * `segi`  - Segi world standard (as used by GLOBOCAN "world (Segi-Doll)"), 18 groups, sums to 100,000 (checked).
-* `who2000` - WHO World Standard Population 2000-2025, 21 groups. Weights are entered from the published table
-  from memory and are NORMALISED to sum to 1; verify them against Ahmad et al. (2001) before publishing.
+* `who2000` - WHO World Standard Population 2000-2025, 21 groups. Weights were checked against the published
+  table (Ahmad et al. 2001; identical to the SEER copy, total 100.035 per 100) and are NORMALISED to sum to 1.
 * `custom` - caller supplies weights.
 
 The chi-square quantiles use the Wilson-Hilferty approximation (no SciPy dependency); intervals are

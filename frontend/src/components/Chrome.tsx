@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import WarmupNote from "./WarmupNote";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLocale } from "@/lib/i18n";
@@ -71,6 +72,7 @@ export default function Chrome({ children }: { children: React.ReactNode }) {
     <>
       <SyntheticBanner />
       <Header />
+      <WarmupNote />
       <main>{children}</main>
       <CommandPalette />
       <Utility />

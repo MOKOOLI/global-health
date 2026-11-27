@@ -1,6 +1,9 @@
 # Changelog
 
 ## Unreleased
+- Frontend: automatic retry on 502/503/504 and network errors, plus a "server is waking up" notice (free Render/Neon hosts sleep when idle).
+- WHO 2000 standard population weights verified against the published table (total 100.035, normalised); "from memory" warnings removed.
+- Home page shows diseases that actually have data and the number of observations; empty disease pages link to diseases with data.
 - Country clinical briefing (printable), command palette, dark mode, home signal strip, official-guidance links.
 - Map disclaimer under every map; ranking caveat; reviewer self-assessment (docs/REVIEW_FOR_HEALTH_AUTHORITIES.md).
 - Age-standardised rate calculator, dataset versioning/datapackage/snapshot, Atom/JSON signal feeds, annual CSV loader, Redis rate limiting, PWA/lite mode/print styles, trust pages.

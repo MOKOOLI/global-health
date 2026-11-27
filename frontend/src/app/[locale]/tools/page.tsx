@@ -7,12 +7,12 @@ import CsvOverlay from "@/components/CsvOverlay";
 const T = {
   fa: { title: "ابزارهای پژوهشی", intro: "محاسبه در سرور ما انجام می‌شود ولی هیچ داده‌ای ذخیره نمی‌شود. برای شمارش‌های کوچک (کمتر از ۱۰ مورد) بازه‌ی اطمینان معتبر نیست.",
     asrH: "نرخ استاندارد‌شده‌ی سنی (ASR)", asrP: "برای مقایسه‌ی دو کشور یا دو دوره با ساختار سنی متفاوت. موارد و جمعیت هر گروه سنی را وارد کنید.",
-    std: "جمعیت استاندارد", segi: "Segi (۱۸ گروه)", who: "WHO 2000 (۲۱ گروه، وزن‌ها از حافظه؛ پیش از انتشار بررسی کنید)", per: "به ازای",
+    std: "جمعیت استاندارد", segi: "Segi (۱۸ گروه)", who: "WHO 2000 (۲۱ گروه؛ وزن‌ها با Ahmad و همکاران ۲۰۰۱ تطبیق داده شده)", per: "به ازای",
     age: "گروه سنی", cases: "موارد", pop: "جمعیت", calc: "محاسبه", asr: "نرخ استاندارد‌شده", crude: "نرخ خام", ci: "بازه‌ی اطمینان ۹۵٪",
     fill: "نمونه‌ی عددی (ساختگی) را پر کن", err: "خطا", method: "روش: استانداردسازی مستقیم با بازه‌ی Fay–Feuer (گاما). کران‌های کای‌دو با تقریب Wilson–Hilferty محاسبه می‌شوند." },
   en: { title: "Research tools", intro: "Calculation runs on our server but nothing is stored. With fewer than 10 cases in total the interval is unreliable.",
     asrH: "Age-standardised rate (ASR)", asrP: "Compare two countries or periods with different age structures. Enter cases and population for each age group.",
-    std: "Standard population", segi: "Segi (18 groups)", who: "WHO 2000 (21 groups; weights entered from memory, verify before publishing)", per: "per",
+    std: "Standard population", segi: "Segi (18 groups)", who: "WHO 2000 (21 groups; weights checked against Ahmad et al. 2001)", per: "per",
     age: "Age group", cases: "Cases", pop: "Population", calc: "Calculate", asr: "Age-standardised rate", crude: "Crude rate", ci: "95% interval",
     fill: "Fill with example numbers (made up)", err: "Error", method: "Method: direct standardisation with a Fay–Feuer gamma interval. Chi-square bounds use the Wilson–Hilferty approximation." },
 };

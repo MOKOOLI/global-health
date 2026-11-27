@@ -24,7 +24,7 @@ class AsrIn(BaseModel):
 @router.get("/standards")
 def standards():
     return {k: dict(labels=v[0], weights=v[1], note=(
-        "Entered from memory; verify before publishing." if k == "who2000" else "Segi world standard; sums to 100,000."))
+        "Checked against Ahmad et al. 2001 (total 100.035, normalised to 1)." if k == "who2000" else "Segi world standard; sums to 100,000."))
         for k, v in asr.STANDARDS.items()}
 
 
