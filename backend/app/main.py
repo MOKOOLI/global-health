@@ -12,6 +12,7 @@ from .routes_extra import router as extra_router
 from .routes_feeds import router as feeds_router
 from .routes_tools import router as tools_router
 from .routes_viz import router as viz_router
+from .routes_pulse import router as pulse_router
 from .routes_surv import router as surveillance_router
 
 
@@ -74,6 +75,7 @@ app.include_router(extra_router)
 app.include_router(feeds_router)
 app.include_router(tools_router)
 app.include_router(viz_router)
+app.include_router(pulse_router)
 
 
 @app.get("/api/ask")

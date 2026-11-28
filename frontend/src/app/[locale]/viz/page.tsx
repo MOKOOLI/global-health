@@ -2,13 +2,14 @@
 
 import { Suspense } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import PulseBoard from "@/components/PulseBoard";
 import BubbleChart from "@/components/BubbleChart";
 import SimilarityNet from "@/components/SimilarityNet";
 import StoryMode from "@/components/StoryMode";
 import { useLocale } from "@/lib/i18n";
 import { VIZ_TXT } from "@/lib/viz";
 
-const TABS = ["bubbles", "network", "story"] as const;
+const TABS = ["pulse", "bubbles", "network", "story"] as const;
 
 function Inner() {
   const { locale } = useLocale();
@@ -16,7 +17,7 @@ function Inner() {
   const sp = useSearchParams();
   const router = useRouter();
   const path = usePathname();
-  const cur = (TABS as readonly string[]).includes(sp.get("v") ?? "") ? (sp.get("v") as (typeof TABS)[number]) : "bubbles";
+  const cur = (TABS as readonly string[]).includes(sp.get("v") ?? "") ? (sp.get("v") as (typeof TABS)[number]) : "pulse";
   return (
     <div className="shell page viz">
       <h1>{T.title}</h1>
@@ -27,6 +28,7 @@ function Inner() {
             onClick={() => router.replace(`${path}?v=${k}`, { scroll: false })}>{T.tabs[k]}</button>
         ))}
       </div>
+      {cur === "pulse" && <PulseBoard />}
       {cur === "bubbles" && <BubbleChart />}
       {cur === "network" && <SimilarityNet />}
       {cur === "story" && <StoryMode />}

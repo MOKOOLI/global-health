@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+- Pulse tab (`/{locale}/viz`, default): weekly surveillance cards, latest WHO alerts, and a burden table with the latest year of every indicator (filter by text, group, measure, age; per-country view with rank among countries; CSV export; optional 5-minute auto-refresh). Every number carries a freshness class suited to its clock (weekly 14/45 days, alerts 7/30 days, annual 2/4 years); annual estimates are never labelled live. API: `/api/pulse`, `/api/pulse/country/{iso3}`.
 - Live charts (`/{locale}/viz`): animated Gapminder-style bubbles (any two indicators, year playback, pinned trails), country similarity network (percentile-rank distance, k-nearest links, label-propagation groups; explicitly not transmission), and a zoomable story generated from the loaded data. API: `/api/viz/options`, `/api/viz/bubbles`, `/api/viz/similarity`.
 - Frontend: automatic retry on 502/503/504 and network errors, plus a "server is waking up" notice (free Render/Neon hosts sleep when idle).
 - WHO 2000 standard population weights verified against the published table (total 100.035, normalised); "from memory" warnings removed.

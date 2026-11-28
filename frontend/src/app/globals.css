@@ -505,3 +505,28 @@ html[data-theme="dark"] .search-results { background: var(--paper); border-color
 .viz-steps .dot.on { background: var(--ui); }
 @media (prefers-reduced-motion: reduce) { .viz-stage * { transition: none !important; } }
 html[data-theme="dark"] .viz-tip { background: #12283A; color: #E8EEF3; border-color: #23405A; }
+
+/* ---- pulse ---- */
+.pulse-bar { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; margin-block: 10px; }
+.pulse-bar .btn-solid, .viz-controls .btn-solid { border: 0; cursor: pointer; font: inherit; font-weight: 700; padding: 6px 16px; }
+.pulse-badge { display: inline-flex; gap: 5px; align-items: center; font-size: .82rem; font-weight: 600; padding: 1px 9px; border-radius: 999px; border: 1px solid currentColor; white-space: nowrap; }
+.pulse-fresh { color: #1B7A52; } .pulse-aging { color: #8A6100; } .pulse-old { color: #6B7280; }
+html[data-theme="dark"] .pulse-fresh { color: #5FD3A1; } html[data-theme="dark"] .pulse-aging { color: #F0C25A; } html[data-theme="dark"] .pulse-old { color: #A7B1BC; }
+.pulse-legend { margin-block: 10px; }
+.pulse-cards { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); margin-block: 12px; }
+.pulse-card { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; }
+.pulse-card h3 { margin: 0 0 4px; font-size: 1.05rem; }
+.pulse-pattern { margin: 0 0 6px; font-weight: 700; }
+.pulse-alerts { padding-inline-start: 0; list-style: none; display: grid; gap: 8px; }
+.pulse-table { inline-size: 100%; border-collapse: collapse; font-size: .9rem; }
+.pulse-table th, .pulse-table td { text-align: start; padding: 6px 10px; border-block-end: 1px solid var(--line); vertical-align: top; }
+.pulse-table thead th { position: sticky; inset-block-start: 0; background: var(--paper); z-index: 1; }
+.table-scroll { overflow-x: auto; margin-block: 12px; max-block-size: 70vh; overflow-y: auto; }
+.pulse-jobs { columns: 2 320px; }
+.pulse-bad { color: #B3261E; }
+.viz-controls input[type="search"] { font: inherit; padding: 6px 8px; min-inline-size: 220px; }
+.pulse-dot { inline-size: 10px; block-size: 10px; border-radius: 50%; border: 2px solid currentColor; display: inline-block; flex: none; box-sizing: border-box; }
+.pulse-fresh .pulse-dot { background: currentColor; }
+.pulse-aging .pulse-dot { background: linear-gradient(90deg, currentColor 50%, transparent 50%); }
+.pulse-table td:nth-child(2) { max-inline-size: 34ch; }
+.viz h2 { margin-block: 2rem 0.5rem; }

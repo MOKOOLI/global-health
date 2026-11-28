@@ -46,7 +46,7 @@ export const clusterColor = (i: number) => CLUSTER_COLORS[i] ?? REGION_FALLBACK;
 export const VIZ_TXT = {
   fa: {
     title: "نمودارهای زنده", lead: "همان داده‌ی اطلس، به‌صورت متحرک و تعاملی. هر شکل فقط از مقادیر واقعاً بارگذاری‌شده ساخته می‌شود؛ چیزی تخمین یا پر نمی‌شود.",
-    tabs: { bubbles: "حباب‌های متحرک", network: "شبکه‌ی شباهت", story: "روایت زوم‌پذیر" },
+    tabs: { pulse: "پایش", bubbles: "حباب‌های متحرک", network: "شبکه‌ی شباهت", story: "روایت زوم‌پذیر" },
     xAxis: "محور افقی", yAxis: "محور عمودی", play: "پخش", pause: "توقف", year: "سال", speed: "سرعت", log: "مقیاس لگاریتمی",
     regions: "منطقه‌ی WHO", pin: "نشان‌دار کردن کشور", pinned: "کشورهای نشان‌دار", clear: "پاک کردن", none: "—",
     sizeNote: "اندازه‌ی حباب: جمعیت کشور", sizeYear: "جمعیت یک سال ثابت است و در طول انیمیشن تغییر نمی‌کند", noPop: "برای کشورهای بدون جمعیت، حباب کوچک ثابت",
@@ -64,7 +64,7 @@ export const VIZ_TXT = {
   },
   en: {
     title: "Live charts", lead: "The atlas data, animated and interactive. Every shape is built only from values that are actually loaded; nothing is estimated or filled in.",
-    tabs: { bubbles: "Animated bubbles", network: "Similarity network", story: "Zoomable story" },
+    tabs: { pulse: "Pulse", bubbles: "Animated bubbles", network: "Similarity network", story: "Zoomable story" },
     xAxis: "Horizontal axis", yAxis: "Vertical axis", play: "Play", pause: "Pause", year: "Year", speed: "Speed", log: "Logarithmic scale",
     regions: "WHO region", pin: "Pin a country", pinned: "Pinned countries", clear: "Clear", none: "—",
     sizeNote: "Bubble size: country population", sizeYear: "Population is for one fixed year and does not change during the animation", noPop: "Countries without a population get a small fixed bubble",

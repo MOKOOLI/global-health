@@ -42,7 +42,7 @@ export default function CommandPalette() {
     data?.countries.slice(0, 5).forEach((x) => out.push({ key: "c" + x.iso3, label: x.name, hint: fa ? "کشور" : "country", href: `/${locale}/country/${x.iso3}` }));
     const pages: [string, string, string][] = [
       ["surveillance", fa ? "هشدار زودهنگام" : "Early warning", "map"], ["learn", fa ? "آموزش و بازپخش" : "Learn & replay", "lessons"],
-      ["viz", fa ? "نمودارهای زنده" : "Live charts", "bubbles · network · story"], ["tools", fa ? "ماشین‌حساب ASR" : "ASR calculator", "tools"], ["compare", fa ? "مقایسه" : "Compare", "countries"],
+      ["viz", fa ? "نمودارهای زنده" : "Live charts", "pulse · bubbles · network · story"], ["tools", fa ? "ماشین‌حساب ASR" : "ASR calculator", "tools"], ["compare", fa ? "مقایسه" : "Compare", "countries"],
       ["resources", fa ? "منابع رسمی" : "Official resources", "WHO · CDC · PubMed"], ["data", fa ? "داده و API" : "Data & API", "licences"],
     ];
     const needle = d.toLowerCase();
